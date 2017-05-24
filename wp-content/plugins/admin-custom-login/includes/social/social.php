@@ -1,4 +1,8 @@
 <!-- Dashboard Settings panel content --->
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <script>
 //Set Value of Drop Down
 jQuery(document).ready(function(){
@@ -393,26 +397,29 @@ if(isset($_POST['Action'])) {
 	$Action = $_POST['Action'];
 	//Save
 	if($Action == "socialSave") {
-		$enable_social_icon = $_POST['enable_social_icon'];
-		$social_icon_size = $_POST['social_icon_size'];
-		$social_icon_layout = $_POST['social_icon_layout'];
-		$social_icon_color = $_POST['social_icon_color'];
-		$social_icon_color_onhover = $_POST['social_icon_color_onhover'];
-		$social_icon_bg = $_POST['social_icon_bg'];
-		$social_icon_bg_onhover = $_POST['social_icon_bg_onhover'];
-		$social_facebook_link = $_POST['social_facebook_link'];
-		$social_twitter_link = $_POST['social_twitter_link'];
-		$social_linkedin_link = $_POST['social_linkedin_link'];
-		$social_google_plus_link = $_POST['social_google_plus_link'];
-		$social_pinterest_link = $_POST['social_pinterest_link'];
-		$social_digg_link = $_POST['social_digg_link'];
-		$social_youtube_link = $_POST['social_youtube_link'];
-		$social_flickr_link = $_POST['social_flickr_link'];
-		$social_tumblr_link = $_POST['social_tumblr_link'];
-		$social_vkontakte_link = $_POST['social_vkontakte_link'];
-		$social_skype_link = $_POST['social_skype_link'];
-		$social_instagram_link = $_POST['social_instagram_link'];
+		$enable_social_icon = sanitize_option('enable_social_icon', $_POST['enable_social_icon']);
+		$social_icon_size = sanitize_option('social_icon_size', $_POST['social_icon_size']);
+		$social_icon_layout = sanitize_option('social_icon_layout', $_POST['social_icon_layout']);
+		$social_icon_color = sanitize_option('social_icon_color', $_POST['social_icon_color']);
+		$social_icon_color_onhover = sanitize_option('social_icon_color_onhover', $_POST['social_icon_color_onhover']);
+		$social_icon_bg = sanitize_option('social_icon_bg', $_POST['social_icon_bg']);
+		$social_icon_bg_onhover = sanitize_option('social_icon_bg_onhover', $_POST['social_icon_bg_onhover']);
 
+		
+		
+		$social_facebook_link = sanitize_text_field($_POST['social_facebook_link']);
+		$social_twitter_link = sanitize_text_field($_POST['social_twitter_link']);
+		$social_linkedin_link = sanitize_text_field($_POST['social_linkedin_link']);
+		$social_google_plus_link = sanitize_text_field($_POST['social_google_plus_link']);
+		$social_pinterest_link = sanitize_text_field($_POST['social_pinterest_link']);
+		$social_digg_link = sanitize_text_field($_POST['social_digg_link']);
+		$social_youtube_link = sanitize_text_field($_POST['social_youtube_link']);
+		$social_flickr_link = sanitize_text_field($_POST['social_flickr_link']);
+		$social_tumblr_link = sanitize_text_field($_POST['social_tumblr_link']);
+		$social_vkontakte_link = sanitize_text_field($_POST['social_vkontakte_link']);
+		$social_skype_link = sanitize_text_field($_POST['social_skype_link']);
+		$social_instagram_link = sanitize_text_field($_POST['social_instagram_link']);
+		
 		$Social_page= serialize(array(
 		'enable_social_icon'=> $enable_social_icon ,
 		'social_icon_size'=> $social_icon_size ,
@@ -448,15 +455,15 @@ if(isset($_POST['Action'])) {
 			'social_icon_bg_onhover'=> '#ffffff' ,
 			'social_facebook_link'=> 'http://facebook.com' ,
 			'social_twitter_link'=> 'https://twitter.com/minimalmonkey',
-			'social_linkedin_link'=> 'https://in.linkedin.com/' ,
+			'social_linkedin_link'=> '' ,
 			'social_google_plus_link'=> 'http://plus.google.com' ,
-			'social_pinterest_link'=> 'https://in.pinterest.com/',
-			'social_digg_link'=> 'https://digg.com/',
+			'social_pinterest_link'=> '',
+			'social_digg_link'=> '',
 			'social_youtube_link'=> 'https://youtube.com/',
 			'social_flickr_link'=> 'https://flickr.com/',
-			'social_tumblr_link'=> 'https://tumblr.com/',
-			'social_vkontakte_link'=> 'https://vkontakte.com/',
-			'social_skype_link'=> 'https://skype.com/',
+			'social_tumblr_link'=> '',
+			'social_vkontakte_link'=> '',
+			'social_skype_link'=> '',
 			'social_instagram_link'=> 'https://instagram.com/',
 		));
 		update_option('Admin_custome_login_Social', $Social_page);

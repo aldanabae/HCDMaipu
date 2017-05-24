@@ -1,4 +1,7 @@
 <?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 function acl_er_login_logo() {
 	/*Get all options from db */
     $er_options = get_option('plugin_erident_settings');
@@ -93,16 +96,7 @@ function acl_er_login_logo() {
       });
     </script>
     <style type="text/css">
-	.fa{
-	line-height:1.5 !important;
-	}
-	p{
-		position:relative !important;
-	}
-	body.login div#login h1 a,
-	#login_error{
-		position:relative !important;
-	}
+	
 	<?php echo $login_page['login_custom_css'] ?>;
 	
 		/* Styles loading for Admin Custome Login */
@@ -234,31 +228,10 @@ function acl_er_login_logo() {
 		}		
 		
 		 .icon-ph {
-			display: inline-block;
-			width: 15px;
-			height: 15px;
-			min-width: 16px;
-			padding: 4px 5px;
-			font-size: 20px;
-			font-weight: normal;
-			line-height: 20px;
-			text-align: center;
-			text-shadow: 0 1px 0 #ffffff;
-			background-color: transparent;
-			position:absolute;
-			left:6px;
-			top:4px;
-			bottom:3px;
-			z-index:3;
+		
 			color:<?php echo $text_and_color_page['input_font_color'] ?>;
 		  }
-		.custom-text {
-			padding:6px 6px 6px 30px ;
-		}
 		
-		.input-container {
-		  position:relative;
-		}
 		
 		body.login div#login form p label {
 			color:<?php echo $text_and_color_page['heading_font_color'] ?>;
@@ -312,5 +285,4 @@ $dashboard_status = $dashboard_page['dashboard_status'];
 if($dashboard_status == "enable") {
 	add_action( 'login_enqueue_scripts', 'acl_er_login_logo' );
 }
-
 ?>

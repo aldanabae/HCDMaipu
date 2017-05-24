@@ -1,5 +1,9 @@
 <!-- Dashboard Settings panel content --- >
 <!----------------------------------------> 
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <div class="row">
 	<div class="post-social-wrapper clearfix">
 		<div class="col-md-12 post-social-item">
@@ -220,9 +224,9 @@ if(isset($_POST['Action'])) {
 
 	//Save
 	if($Action == "dashboardSave") {
-		$dashboard_status = $_POST['dashboard_status'];
-		
-		// save values in option table
+		$dashboard_status = sanitize_option('dashboard_status', $_POST['dashboard_status']);
+	
+	// save values in option table
 		$dashboard_page= serialize(array(
 			'dashboard_status' => $dashboard_status
 		));

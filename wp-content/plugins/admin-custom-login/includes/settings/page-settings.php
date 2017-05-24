@@ -1,4 +1,8 @@
 <!-- Dashboard Settings panel content --->
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <Script>
 //logo Image preview
 function Acl_show_Image_3() {
@@ -322,13 +326,13 @@ if(isset($_POST['Action'])) {
 	$Action = $_POST['Action'];	
 	//Save Page Values
 	if($Action == "logoSave") {
-		$logo_image = $_POST['logo_image'];
-		$logo_width = $_POST['logo_width'];
-		$logo_height = $_POST['logo_height'];
-		$logo_url = $_POST['logo_url'];
-		$logo_url_title = $_POST['logo_url_title'];
-
-		// save values in option table
+		$logo_image = sanitize_option('logo_image', $_POST['logo_image']);
+		$logo_width = sanitize_option('logo_width', $_POST['logo_width']);
+		$logo_height = sanitize_option('logo_height', $_POST['logo_height']);
+		$logo_url = sanitize_text_field($_POST['logo_url']);
+		$logo_url_title = sanitize_text_field($_POST['logo_url_title']);
+	
+	// save values in option table
 		$logo_page= serialize(array(
 			'logo_image' => $logo_image,
 			'logo_width'=> $logo_width,

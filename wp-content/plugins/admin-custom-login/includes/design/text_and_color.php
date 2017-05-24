@@ -1,5 +1,9 @@
 <!-- Dashboard Settings panel content --- >
 <!---------------------------------------->
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <Script>
 //button Headline-Font-size slider
   jQuery(function() {
@@ -74,52 +78,7 @@ jQuery(document).ready(function(){
 	 jQuery("#button_font_style").val('<?php if($button_font_style != ""){echo $button_font_style;}else {echo "";}?>'); 
 });
 </script>
-<style>
-	.ui-state-default, .ui-widget-content .ui-state-default{
-	background-color: #fff;
-	border: 0px solid #c5dbec;
-	border-radius: 100%;
-	cursor: move;
-	height: 30px;
-	left: 0;
-	top: -11px;
-	position: absolute;
-	width: 30px;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	}
-	.ui-slider-horizontal {
-	height: .5em;
-	}
-	.ui-widget-content {
-	 border: 0px solid #a6c9e2; 
-	background: #a9acb1;
-	color: #222222;
-	}
-	.ui-widget-header {
-	border: 0px solid #4297d7;
-	background: #ef4238;
-	color: #ffffff;
-	font-weight: bold;
-	}
-	.slider-text{
-	background-color: #f7fcff !important;
-	border-radius: 5px;
-	font-size: 0.9em;
-	height: 29px;
-	padding-top: 2px;
-	text-align: center;
-	width: 55px;
-	margin-left: 25px;
-	border-color: #ffffff !important;
-	margin-right: 5px;
-	-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
-	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15) !important;
-	}
-	.slider-text-span{
-	font-size:17px;
-	}
-</style>
+
 <div class="row">
 	<div class="post-social-wrapper clearfix">
 		<div class="col-md-12 post-social-item">
@@ -2844,24 +2803,25 @@ if(isset($_POST['Action'])) {
 	$Action = $_POST['Action'];
 	//Save
 	if($Action == "textandcolorSave"){
-		$heading_font_color = $_POST['heading_font_color'];
-		$input_font_color = $_POST['input_font_color'];
-		$link_color = $_POST['link_color'];
-		$button_color = $_POST['button_color'];
-		$heading_font_size = $_POST['heading_font_size'];
-		$input_font_size = $_POST['input_font_size'];
-		$link_size = $_POST['link_size'];
-		$button_font_size = $_POST['button_font_size'];
-		$enable_link_shadow = $_POST['enable_link_shadow'];
-		$link_shadow_color = $_POST['link_shadow_color'];
-		$heading_font_style = $_POST['heading_font_style'];
-		$input_font_style = $_POST['input_font_style'];
-		$link_font_style = $_POST['link_font_style'];
-		$button_font_style = $_POST['button_font_style'];
-		$enable_inputbox_icon = $_POST['enable_inputbox_icon'];
-		$user_input_icon = $_POST['user_input_icon'];
-		$password_input_icon = $_POST['password_input_icon'];
+		$heading_font_color = sanitize_option('heading_font_color', $_POST['heading_font_color']);
+		$input_font_color = sanitize_option('input_font_color', $_POST['input_font_color']);
+		$link_color = sanitize_option('link_color', $_POST['link_color']);
+		$button_color = sanitize_option('button_color', $_POST['button_color']);
+		$heading_font_size = sanitize_option('heading_font_size', $_POST['heading_font_size']);
+		$input_font_size = sanitize_option('input_font_size', $_POST['input_font_size']);
+		$link_size = sanitize_option('link_size', $_POST['link_size']);
+		$button_font_size = sanitize_option('button_font_size', $_POST['button_font_size']);
+		$enable_link_shadow = sanitize_option('enable_link_shadow', $_POST['enable_link_shadow']);
+		$link_shadow_color = sanitize_option('link_shadow_color', $_POST['link_shadow_color']);
+		$heading_font_style = sanitize_option('heading_font_style', $_POST['heading_font_style']);
+		$input_font_style = sanitize_option('input_font_style', $_POST['input_font_style']);
+		$link_font_style = sanitize_option('link_font_style', $_POST['link_font_style']);
+		$button_font_style = sanitize_option('button_font_style', $_POST['button_font_style']);
+		$enable_inputbox_icon = sanitize_option('enable_inputbox_icon', $_POST['enable_inputbox_icon']);
+		$user_input_icon = sanitize_option('user_input_icon', $_POST['user_input_icon']);
+		$password_input_icon = sanitize_option('password_input_icon', $_POST['password_input_icon']);
 
+		
 		// Save Values in Option Table
 		$text_and_color_page= serialize(array(
 			'heading_font_color'=>$heading_font_color,
@@ -2897,10 +2857,10 @@ if(isset($_POST['Action'])) {
 			'button_font_size'=>'14',
 			'enable_link_shadow'=>'yes',
 			'link_shadow_color'=>'#ffffff',
-			'heading_font_style'=>'Arial',
-			'input_font_style'=>'Arial',
-			'link_font_style'=>'Arial',
-			'button_font_style'=>'Arial',
+			'heading_font_style'=>'Open Sans',
+			'input_font_style'=>'Open Sans',
+			'link_font_style'=>'Open Sans',
+			'button_font_style'=>'Open Sans',
 			'enable_inputbox_icon'=>'yes',
 			'user_input_icon'=>'fa-user',
 			'password_input_icon'=>'fa-key'

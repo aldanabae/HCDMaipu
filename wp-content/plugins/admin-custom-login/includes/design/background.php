@@ -1,4 +1,8 @@
 <!-- Dashboard Settings panel content --->
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <script>
 function Acl_show_Image() {
 	var img_src= document.getElementById("top_image").value;
@@ -595,29 +599,30 @@ if(isset($_POST['Action'])) {
 
 	//Save
 	if($Action == "topbgSave") {
-		$select_bg_value = $_POST['select_bg_value'];
-		$top_background_color = $_POST['top_background_color'];
-		$top_bg_image = $_POST['top_bg_image'];
-		$top_cover = $_POST['top_cover'];
-		$top_bg_repeat = $_POST['top_bg_repeat'];
-		$top_bg_position = $_POST['top_bg_position'];
-		$top_bg_attachment = $_POST['top_bg_attachment'];
-		$top_slideshow_no = $_POST['top_slideshow_no'];
-		$top_bg_slider_animation = $_POST['top_bg_slider_animation'];
+		$select_bg_value =sanitize_option('select_bg_value', $_POST['select_bg_value']);
+		$top_background_color =sanitize_option('top_background_color', $_POST['top_background_color']);
+		$top_bg_image =sanitize_option('top_bg_image', $_POST['top_bg_image']);
+		$top_cover =sanitize_option('top_cover', $_POST['top_cover']);
+		$top_bg_repeat =sanitize_option('top_bg_repeat', $_POST['top_bg_repeat']);
+		$top_bg_position =sanitize_option('top_bg_position', $_POST['top_bg_position']);
+		$top_bg_attachment =sanitize_option('top_bg_attachment', $_POST['top_bg_attachment']);
+		$top_slideshow_no =sanitize_option('top_slideshow_no', $_POST['top_slideshow_no']);
+		$top_bg_slider_animation =sanitize_option('top_bg_slider_animation', $_POST['top_bg_slider_animation']);
+		$Slidshow_image_1 =sanitize_text_field($_POST['Slidshow_image_1']);
+		$Slidshow_image_2 =sanitize_text_field($_POST['Slidshow_image_2']);
+		$Slidshow_image_3 =sanitize_text_field($_POST['Slidshow_image_3']);
+		$Slidshow_image_4 =sanitize_text_field($_POST['Slidshow_image_4']);
+		$Slidshow_image_5 =sanitize_text_field($_POST['Slidshow_image_5']);
+		$Slidshow_image_6 =sanitize_text_field($_POST['Slidshow_image_6']);
+	
+		$image_label_1 =sanitize_text_field($_POST['image_label_1']);
+		$image_label_2 =sanitize_text_field($_POST['image_label_2']);
+		$image_label_3 =sanitize_text_field($_POST['image_label_3']);
+		$image_label_4 =sanitize_text_field($_POST['image_label_4']);
+		$image_label_5 =sanitize_text_field($_POST['image_label_5']);
+		$image_label_6 =sanitize_text_field($_POST['image_label_6']);
 		
-		$Slidshow_image_1 = $_POST['Slidshow_image_1'];
-		$Slidshow_image_2 = $_POST['Slidshow_image_2'];
-		$Slidshow_image_3 = $_POST['Slidshow_image_3'];
-		$Slidshow_image_4 = $_POST['Slidshow_image_4'];
-		$Slidshow_image_5 = $_POST['Slidshow_image_5'];
-		$Slidshow_image_6 = $_POST['Slidshow_image_6'];
 		
-		$image_label_1 = $_POST['image_label_1'];
-		$image_label_2 = $_POST['image_label_2'];
-		$image_label_3 = $_POST['image_label_3'];
-		$image_label_4 = $_POST['image_label_4'];
-		$image_label_5 = $_POST['image_label_5'];
-		$image_label_6 = $_POST['image_label_6'];
 
 		// Save Values in Option Table
 		$top_page= serialize(array(

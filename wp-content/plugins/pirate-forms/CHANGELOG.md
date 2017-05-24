@@ -1,4 +1,25 @@
 
+ ### v1.2.0 - 2017-05-08 
+ **Changes:** 
+ - Changed sent email format to a HTML type
+ 
+### 1.2.0 - 06/04/2017
+**Changes:** 
+- Update readme.txt
+
+### 1.2.0 - 06/04/2017
+**Changes:** 
+- Improved description
+
+### 1.2.0 - 19/01/2017
+**Changes:** 
+- Fixed security error for file field.
+- Added dashboard widget.
+
+### 1.1.3 - 11/01/2017
+**Changes:** 
+- Update readme.txt
+
 ### 1.1.3 - 20/12/2016
 **Changes:** 
 - Sync with wp.org

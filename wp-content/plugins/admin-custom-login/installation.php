@@ -1,4 +1,7 @@
 <?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 $login_Version = unserialize(get_option('Admin_custome_login_Version'));
 $Version = $login_Version['Version'];
 if(!isset($Version)){
@@ -32,6 +35,7 @@ if(!isset($Version)){
 		'login_form_left'=>'700',
 		'login_form_top'=>'300',
 		'login_custom_css'=>'',
+		'login_redirect_user'=>'',
 		'login_bg_type'=>'static-background-image',
 		'login_bg_color' => '#1e73be',
 		'login_bg_effect' => 'pattern-1',
@@ -60,10 +64,10 @@ if(!isset($Version)){
 		'button_font_size'=>'14',
 		'enable_link_shadow'=>'yes',
 		'link_shadow_color'=>'#ffffff',
-		'heading_font_style'=>'Arial',
-		'input_font_style'=>'Arial',
-		'link_font_style'=>'Arial',
-		'button_font_style'=>'Arial',
+		'heading_font_style'=>'Open Sans',
+		'input_font_style'=>'Open Sans',
+		'link_font_style'=>'Open Sans',
+		'button_font_style'=>'Open Sans',
 		'enable_inputbox_icon'=>'yes',
 		'user_input_icon'=>'fa-user',
 		'password_input_icon'=>'fa-key'
@@ -89,15 +93,15 @@ if(!isset($Version)){
 		'social_icon_bg_onhover'		=> '#ffffff' ,
 		'social_facebook_link'			=> 'http://facebook.com' ,
 		'social_twitter_link'			=> 'https://twitter.com/minimalmonkey',
-		'social_linkedin_link'			=> 'https://in.linkedin.com/' ,
+		'social_linkedin_link'			=> '' ,
 		'social_google_plus_link'		=> 'http://plus.google.com' ,
-		'social_pinterest_link'			=> 'https://in.pinterest.com/',
-		'social_digg_link'				=> 'https://digg.com',
+		'social_pinterest_link'			=> '',
+		'social_digg_link'				=> '',
 		'social_youtube_link'			=> 'https://youtube.com',	
 		'social_flickr_link'			=> 'https://flickr.com',
-		'social_tumblr_link'			=> 'https://tumblr.com',
-		'social_vkontakte_link'			=> 'https://vkontakte.com',
-		'social_skype_link'				=> 'https://skype.com',
+		'social_tumblr_link'			=> '',
+		'social_vkontakte_link'			=> '',
+		'social_skype_link'				=> '',
 		'social_instagram_link'			=> 'https://instagram.com',
 	));
 	add_option("Admin_custome_login_Social", $Social_page);

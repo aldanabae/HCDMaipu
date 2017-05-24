@@ -1,4 +1,8 @@
 <!-- Dashboard Settings panel content --->
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <script>
 //on load form floating
 var floatingform = '<?php echo $login_form_position; ?>';
@@ -158,52 +162,7 @@ function loginbgchange() {
 	}		
 }
 </script>
-<style>
-	.ui-state-default, .ui-widget-content .ui-state-default{
-	background-color: #fff;
-	border: 0px solid #c5dbec;
-	border-radius: 100%;
-	cursor: move;
-	height: 30px;
-	left: 0;
-	top: -11px;
-	position: absolute;
-	width: 30px;
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-	}
-	.ui-slider-horizontal {
-	height: .5em;
-	}
-	.ui-widget-content {
-	 border: 0px solid #a6c9e2; 
-	background: #a9acb1;
-	color: #222222;
-	}
-	.ui-widget-header {
-	border: 0px solid #4297d7;
-	background: #ef4238;
-	color: #ffffff;
-	font-weight: bold;
-	}
-	.slider-text{
-	background-color: #f7fcff !important;
-	border-radius: 5px;
-	font-size: 0.9em;
-	height: 29px;
-	padding-top: 2px;
-	text-align: center;
-	width: 55px;
-	margin-left: 25px;
-	border-color: #ffffff !important;
-	margin-right: 5px;
-	-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
-	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15) !important;
-	}
-	.slider-text-span{
-	font-size:17px;
-	}
-</style>
+
 	<div class="row">
 		<div class="post-social-wrapper clearfix">
 			<div class="col-md-12 post-social-item">
@@ -585,6 +544,22 @@ function loginbgchange() {
 			</div>
 		</div>
 		<div class="panel panel-primary panel-default content-panel">
+		<div class="panel-body">
+			<table class="form-table">
+				<tr>
+					<th scope="row" ><?php _e('Redirect Users other than Admin','WEBLIZAR_ACL')?></th>
+					<td></td>
+				</tr>
+				<tr class="radio-span" style="border-bottom:none;">
+					<td>
+						<input type="text" class="login_redirect_user" id="login_redirect_user" name="login_redirect_user" placeholder="Redirect URL" size="56" value="<?php echo $login_redirect_user; ?>"><br>
+						<span style="color:#ef4238">  Enter the URL to redirect users after login other than Admin</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+		<div class="panel panel-primary panel-default content-panel">
 			<div class="panel-body">
 				<table class="form-table">
 					<tr>
@@ -692,6 +667,7 @@ function loginbgchange() {
 			var login_bg_repeat = jQuery( "#login_bg_repeat option:selected" ).val();
 			var login_bg_position = jQuery( "#login_bg_position option:selected" ).val();
 			var login_custom_css = jQuery( "#login_custom_css").val();
+			var login_redirect_user = jQuery( "#login_redirect_user").val();
 			if (document.getElementById('login_enable_shadow1').checked) {
 				var login_enable_shadow = document.getElementById('login_enable_shadow1').value;
 			}
@@ -701,7 +677,7 @@ function loginbgchange() {
 			var login_shadow_color = jQuery("#login_shadow_color").val();
 			
 
-			var PostData = "Action=" + Action + "&login_form_position=" + login_form_position + "&Login_bg_value=" + Login_bg_value + "&login_background_color=" + login_background_color + "&login_bg_color_overlay=" + login_bg_color_overlay + "&login_bg_image=" + login_bg_image + "&login_form_opacity=" + login_form_opacity  + "&login_form_width=" + login_form_width + "&login_form_radius=" + login_form_radius + "&login_border_style=" + login_border_style + "&login_border_thikness=" + login_border_thikness + "&login_border_color=" + login_border_color + "&login_bg_repeat=" + login_bg_repeat + "&login_bg_position=" + login_bg_position + "&login_enable_shadow=" + login_enable_shadow + "&login_shadow_color=" + login_shadow_color + "&login_custom_css=" + login_custom_css + "&login_form_left=" + login_form_left + "&login_form_top=" + login_form_top + "&login_form_float=" + login_form_float;
+			var PostData = "Action=" + Action + "&login_form_position=" + login_form_position + "&Login_bg_value=" + Login_bg_value + "&login_background_color=" + login_background_color + "&login_bg_color_overlay=" + login_bg_color_overlay + "&login_bg_image=" + login_bg_image + "&login_form_opacity=" + login_form_opacity  + "&login_form_width=" + login_form_width + "&login_form_radius=" + login_form_radius + "&login_border_style=" + login_border_style + "&login_border_thikness=" + login_border_thikness + "&login_border_color=" + login_border_color + "&login_bg_repeat=" + login_bg_repeat + "&login_bg_position=" + login_bg_position + "&login_enable_shadow=" + login_enable_shadow + "&login_shadow_color=" + login_shadow_color + "&login_custom_css=" + login_custom_css + "&login_redirect_user=" + login_redirect_user +"&login_form_left=" + login_form_left + "&login_form_top=" + login_form_top + "&login_form_float=" + login_form_float;
 			jQuery.ajax({
 				dataType : 'html',
 				type: 'POST',
@@ -795,9 +771,11 @@ function loginbgchange() {
 					jQuery(document).ready( function() {
 					jQuery('input[name=enable_form_shadow]').val(['yes']);
 					//login Custom Css 
-					
 					 jQuery("#login_custom_css").val(''); 
-					});
+					 
+					 //login Redirect  User
+					 jQuery("#login_redirect_user").val(''); 
+					 });
 					//Login Image
 					document.getElementById("login_bg_image").value ="<?php echo WEBLIZAR_NALF_PLUGIN_URL?>/images/3d-background.jpg";
 					// Login From Background Color
@@ -834,26 +812,27 @@ function loginbgchange() {
 		$Action = $_POST['Action'];
 		//Save
 		if($Action == "loginbgSave") {
-			$login_form_position 	=$_POST['login_form_position'];
-			$login_form_left = $_POST['login_form_left'];
-			$login_form_top = $_POST['login_form_top'];
-			$login_form_float = $_POST['login_form_float'];
-			$Login_bg_value = $_POST['Login_bg_value'];
-			$login_background_color = $_POST['login_background_color'];
-			$login_bg_color_overlay = $_POST['login_bg_color_overlay'];
-			$login_bg_image = $_POST['login_bg_image'];
-			$login_form_opacity = $_POST['login_form_opacity'];
-			$login_form_width = $_POST['login_form_width'];
-			$login_form_radius = $_POST['login_form_radius'];
-			$login_border_style = $_POST['login_border_style'];
-			$login_border_thikness = $_POST['login_border_thikness'];
-			$login_border_color = $_POST['login_border_color'];
-			$login_bg_repeat = $_POST['login_bg_repeat'];
-			$login_bg_position = $_POST['login_bg_position'];
-			$login_enable_shadow = $_POST['login_enable_shadow'];
-			$login_shadow_color = $_POST['login_shadow_color'];
-			$login_custom_css = $_POST['login_custom_css'];
-			
+			$login_form_position 	= sanitize_option('login_form_position', $_POST['login_form_position']);
+			$login_form_left 	= sanitize_option('login_form_left', $_POST['login_form_left']);
+			$login_form_top 	= sanitize_option('login_form_top', $_POST['login_form_top']);
+			$login_form_float 	= sanitize_option('login_form_float', $_POST['login_form_float']);
+			$Login_bg_value 	= sanitize_option('Login_bg_value', $_POST['Login_bg_value']);
+			$login_background_color 	= sanitize_option('login_background_color', $_POST['login_background_color']);
+			$login_bg_color_overlay 	= sanitize_option('login_bg_color_overlay', $_POST['login_bg_color_overlay']);
+			$login_bg_image 	= sanitize_option('login_bg_image', $_POST['login_bg_image']);
+			$login_form_opacity 	= sanitize_option('login_form_opacity', $_POST['login_form_opacity']);
+			$login_form_width 	= sanitize_option('login_form_width', $_POST['login_form_width']);
+			$login_form_radius 	= sanitize_option('login_form_radius', $_POST['login_form_radius']);
+			$login_border_style 	= sanitize_option('login_border_style', $_POST['login_border_style']);
+			$login_border_thikness 	= sanitize_option('login_border_thikness', $_POST['login_border_thikness']);
+			$login_border_color 	= sanitize_option('login_border_color', $_POST['login_border_color']);
+			$login_bg_repeat 	= sanitize_option('login_bg_repeat', $_POST['login_bg_repeat']);
+			$login_bg_position 	= sanitize_option('login_bg_position', $_POST['login_bg_position']);
+			$login_enable_shadow 	= sanitize_option('login_enable_shadow', $_POST['login_enable_shadow']);
+			$login_shadow_color 	= sanitize_option('login_shadow_color', $_POST['login_shadow_color']);
+			$login_custom_css 	= sanitize_option('login_custom_css', $_POST['login_custom_css']);
+			$login_redirect_user 	= sanitize_option('login_redirect_user', $_POST['login_redirect_user']);
+
 			
 			// Save Values in Option Table
 			$login_page= serialize(array(
@@ -876,6 +855,7 @@ function loginbgchange() {
 				'login_enable_shadow' => $login_enable_shadow,
 				'login_shadow_color' => $login_shadow_color,
 				'login_custom_css' => $login_custom_css,
+				'login_redirect_user' => $login_redirect_user,
 				
 			));
 			update_option('Admin_custome_login_login', $login_page);
@@ -902,6 +882,7 @@ function loginbgchange() {
 				'login_enable_shadow' => 'yes',
 				'login_shadow_color' => '#C8C8C8',
 				'login_custom_css' => '',
+				'login_redirect_user' => '',
 			));
 			update_option('Admin_custome_login_login', $login_page);
 		}

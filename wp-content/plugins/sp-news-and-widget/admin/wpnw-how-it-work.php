@@ -19,7 +19,7 @@ add_action('admin_menu', 'wpnw_register_design_page');
  * @since 1.0.0
  */
 function wpnw_register_design_page() {
-	add_submenu_page( 'edit.php?post_type='.WPNW_POST_TYPE, __('How it works, our plugins and offers', 'sp-news-and-widget'), __('How It Works', 'sp-news-and-widget'), 'manage_options', 'wpnw-designs', 'wpnw_designs_page' );
+	add_submenu_page( 'edit.php?post_type='.WPNW_POST_TYPE, __('How it works - WP News and Scrolling Widgets', 'sp-news-and-widget'), __('How It Works', 'sp-news-and-widget'), 'edit_posts', 'wpnw-designs', 'wpnw_designs_page' );
 }
 
 /**
@@ -140,7 +140,7 @@ function wpnw_help_tabs() {
  * @since 1.0.0
  */
 function wpnw_howitwork_page() { ?>
-	
+
 	<style type="text/css">
 		.wpos-pro-box .hndle{background-color:#0073AA; color:#fff;}
 		.wpos-pro-box .postbox{background:#dbf0fa none repeat scroll 0 0; border:1px solid #0073aa; color:#191e23;}
@@ -152,7 +152,7 @@ function wpnw_howitwork_page() { ?>
 	<div class="post-box-container">
 		<div id="poststuff">
 			<div id="post-body" class="metabox-holder columns-2">
-			
+
 				<!--How it workd HTML -->
 				<div id="post-body-content">
 					<div class="metabox-holder">
@@ -160,7 +160,7 @@ function wpnw_howitwork_page() { ?>
 							<div class="postbox">
 								
 								<h3 class="hndle">
-									<span><?php _e( 'How It Works - Display and shortcode', 'sp-news-and-widget' ); ?></span>
+									<span><?php _e( 'How It Works - Display and Shortcode', 'sp-news-and-widget' ); ?></span>
 								</h3>
 								
 								<div class="inside">
@@ -168,22 +168,22 @@ function wpnw_howitwork_page() { ?>
 										<tbody>
 											<tr>
 												<th>
-													<label><?php _e('Geeting Started with News and widget', 'sp-news-and-widget'); ?>:</label>
+													<label><?php _e('Geeting Started', 'sp-news-and-widget'); ?></label>
 												</th>
 												<td>
 													<ul>
 														<li><?php _e('Step-1: This plugin create a News menu tab in WordPress menu with custom post type.".', 'sp-news-and-widget'); ?></li>														
-														<li><?php _e('Step-2: Go to "News --> Add news item tab".', 'sp-news-and-widget'); ?></li>
-														<li><?php _e('Step-3: Add blog title, description, category, and images as featured image.', 'sp-news-and-widget'); ?></li>
-														<li><?php _e('Step-4: Repeat this process and add multiple news item', 'sp-news-and-widget'); ?></li>	
-														<li><?php _e('Step-4: To display news category wise you can use category shortcode under "News --> News category"', 'sp-news-and-widget'); ?></li>															
+														<li><?php _e('Step-2: Go to "News > Add news item tab".', 'sp-news-and-widget'); ?></li>
+														<li><?php _e('Step-3: Add news title, description, category, and image as featured image.', 'sp-news-and-widget'); ?></li>
+														<li><?php _e('Step-4: Repeat this process and add multiple news item.', 'sp-news-and-widget'); ?></li>	
+														<li><?php _e('Step-4: To display news category wise you can use category shortcode under "News > News category"', 'sp-news-and-widget'); ?></li>															
 													</ul>
 												</td>
 											</tr>
 
 											<tr>
 												<th>
-													<label><?php _e('How Shortcode Works', 'sp-news-and-widget'); ?>:</label>
+													<label><?php _e('How Shortcode Works', 'sp-news-and-widget'); ?></label>
 												</th>
 												<td>
 													<ul>
@@ -196,7 +196,7 @@ function wpnw_howitwork_page() { ?>
 
 											<tr>
 												<th>
-													<label><?php _e('All Shortcodes', 'sp-news-and-widget'); ?>:</label>
+													<label><?php _e('All Shortcodes', 'sp-news-and-widget'); ?></label>
 												</th>
 												<td>
 													<span class="wpnwm-shortcode-preview">[sp_news grid="list"]</span> – <?php _e('News in List View', 'sp-news-and-widget'); ?> <br />
@@ -258,6 +258,20 @@ function wpnw_howitwork_page() { ?>
 							</div><!-- #general -->
 						</div><!-- .meta-box-sortables ui-sortable -->
 					</div><!-- .metabox-holder -->
+
+					<div class="metabox-holder wpos-pro-box">
+                        <div class="meta-box-sortables ui-sortable">
+                            <div class="postbox">
+                                <h3 class="hndle">
+                                    <span><?php _e('Need PRO Support?', 'sp-news-and-widget'); ?></span>
+                                </h3>
+                                <div class="inside">
+                                    <p><?php _e('Hire our experts for WordPress website support.', 'sp-news-and-widget'); ?></p>
+                                    <p><a class="button button-primary wpos-button-full" href="https://www.wponlinesupport.com/projobs-support/?utm_source=hp&event=projobs" target="_blank"><?php _e('PRO Support', 'sp-news-and-widget'); ?></a></p>
+                                </div><!-- .inside -->
+                            </div><!-- #general -->
+                        </div><!-- .meta-box-sortables ui-sortable -->
+                    </div><!-- .metabox-holder -->
 
 					<!-- Help to improve this plugin! -->
 					<div class="metabox-holder">

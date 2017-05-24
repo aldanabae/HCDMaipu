@@ -103,7 +103,8 @@ var cincopaGallery = {
 		//-------------New Code--------------------
 		var is_list = (data != "no session");
 
-		var login = '<div class="cincopa-login"><a href="//www.cincopa.com/login.aspx" target="_blank">Please login first</a></div>';
+		var login = '<div class="cincopa-login"><a href="https://www.cincopa.com/login.aspx" target="_blank">Login</a> or <a href="https://www.cincopa.com/register.aspx" target="_blank">Register</a> to Cincopa to see this list</div>';
+		//var login = '<div class="cincopa-login"><a href="//www.cincopa.com/login.aspx" target="_blank">Please login first</a></div>';
 
 		var container = '<ul class="cincopa-gallery-list">{items}</ul>';
 		var item_container = '<li class="cincopa-gallery-item" did="{id}">{item}</li>';

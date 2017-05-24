@@ -1,4 +1,8 @@
 <?php
+
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 	// Get value of Dashboard page
 	$dashboard_page = unserialize(get_option('Admin_custome_login_dashboard'));
 	$dashboard_status = $dashboard_page['dashboard_status'];
@@ -37,6 +41,7 @@
 	$login_enable_shadow=$login_page['login_enable_shadow'];
 	$login_shadow_color=$login_page['login_shadow_color'];
 	$login_custom_css=$login_page['login_custom_css'];
+	$login_redirect_user=$login_page['login_redirect_user'];
 	
 	// Get value of Text and Color page
 	$text_and_color_page = unserialize(get_option('Admin_custome_login_text'));

@@ -1,16 +1,53 @@
 <?php
 /**
  * Plugin Name: Admin Custom Login
- * Version: 2.4.7.1
+ * Version: 2.5.0
  * Description: Customize Your WordPress Login Screen Amazingly
  * Author: Weblizar
  * Author URI: http://weblizar.com/plugins/
  * Plugin URI: http://weblizar.com/plugins/
  */
-
+ 
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
 define("WEBLIZAR_NALF_PLUGIN_URL", plugin_dir_url(__FILE__));
 define("WEBLIZAR_ACL", "WEBLIZAR_ACL" );
 
+/**
+* Redirect user after successful login.
+*
+* @param string $redirect_to URL to redirect to.
+* @param string $request URL the user is coming from.
+* @param object $user Logged user's data.
+* @return string
+*/
+function ACL_login_redirect( $redirect_to, $request, $user ) {
+	//is there a user to check?
+    if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+
+		// get and load custom rerdirect option after user login
+		$login_page = unserialize(get_option('Admin_custome_login_login'));
+		$login_redirect_user = $login_page['login_redirect_user'];
+		
+        //check for admins
+        if ( in_array( 'administrator', $user->roles ) ) {
+            // redirect admin to the default place
+            return $redirect_to;
+        } else {
+            // redirect users to another place
+			if($login_redirect_user != "") {
+                return $login_redirect_user;
+            } else {
+                return $redirect_to;
+            }
+        }
+    } else {
+        return $redirect_to;
+    }
+}
+add_filter( 'login_redirect', 'ACL_login_redirect', 10, 3 );
+
+// load plugin translation
 add_action('plugins_loaded', 'ACL_GetReadyTranslation');
 function ACL_GetReadyTranslation() {
 	load_plugin_textdomain(WEBLIZAR_ACL, FALSE, dirname( plugin_basename(__FILE__)).'/languages/' );
@@ -30,15 +67,16 @@ function ACL_WeblizarDoInstallation() {
 require_once("login-form-screen.php");
 add_action('admin_menu','acl_weblizar_admin_custom_login_menu');
 function acl_weblizar_admin_custom_login_menu() {
-    //plugin menu page under the settings page
-    // $acl_menu = add_menu_page('Admin custom Login', 'Admin custom Login','administrator', 'admin_custom_login','acl_admin_custom_login_content');
-    $acl_menu = add_submenu_page( 'options-general.php','Admin Custom Login', 'Admin Custom Login','administrator', 'admin_custom_login','acl_admin_custom_login_content' );
-    add_action( 'admin_print_styles-' . $acl_menu, 'acl_admin_custom_login_js_css' );
+	if(current_user_can('administrator')){
+		//plugin menu page under the settings page
+		// $acl_menu = add_menu_page('Admin custom Login', 'Admin custom Login','administrator', 'admin_custom_login','acl_admin_custom_login_content');
+		$acl_menu = add_submenu_page( 'options-general.php','Admin Custom Login', 'Admin Custom Login','administrator', 'admin_custom_login','acl_admin_custom_login_content' );
+		add_action( 'admin_print_styles-' . $acl_menu, 'acl_admin_custom_login_css' );
+	}
 }
 
-function acl_admin_custom_login_js_css() {
+function acl_admin_custom_login_css() {
     //enqueue scripts page for Admin Custom Login plugin admin panel
-    wp_enqueue_script('theme-preview');
 	wp_enqueue_style('dashboard');
 	wp_enqueue_style('wp-color-picker');
 	wp_enqueue_style('thickbox');
@@ -53,12 +91,20 @@ function acl_admin_custom_login_js_css() {
 	wp_enqueue_style('acl-dialog', WEBLIZAR_NALF_PLUGIN_URL.'css/dialog/dialog.css');
 	wp_enqueue_style('acl-dialog-box-style', WEBLIZAR_NALF_PLUGIN_URL.'css/dialog/dialog-box-style.css');
 	wp_enqueue_style('acl-dialog-jamie', WEBLIZAR_NALF_PLUGIN_URL.'css/dialog/dialog-jamie.css');
+	wp_enqueue_style('acl-custom-css', WEBLIZAR_NALF_PLUGIN_URL.'css/custom.css');	
+	
+	wp_enqueue_style('acl-googleapis-css_01', 'http://fonts.googleapis.com/css?family=Dosis:600,700,800');
+	wp_enqueue_style('acl-googleapis-css_02', 'http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900');
+	wp_enqueue_style('acl-googleapis-css_03', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700');
+}
 
+add_action( 'admin_print_scripts', 'acl_admin_custom_login_js' );
+function acl_admin_custom_login_js() {
+	wp_enqueue_script('theme-preview');
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_script('acl-media-uploads',WEBLIZAR_NALF_PLUGIN_URL.'js/acl-media-upload-script.js',array('media-upload','thickbox','jquery'));    
 	wp_enqueue_script('acl-color-picker-script', WEBLIZAR_NALF_PLUGIN_URL.'js/acl-color-picker-script.js', array( 'wp-color-picker' ), false, true );
-
 	wp_enqueue_script('acl-bootstrap-min-js',WEBLIZAR_NALF_PLUGIN_URL.'js/bootstrap.min.js');
 	wp_enqueue_script('acl-metisMenu',WEBLIZAR_NALF_PLUGIN_URL.'js/plugins/metisMenu/metisMenu.min.js');	
 	wp_enqueue_script('aclsmartech',WEBLIZAR_NALF_PLUGIN_URL.'js/smartech.js',array('jquery'));
@@ -81,6 +127,7 @@ function acl_advanced_login_form_plugin() {
 		wp_enqueue_style('demo', WEBLIZAR_NALF_PLUGIN_URL.'css/demo.css');
 	}
 	wp_enqueue_style('font-awesome_min', WEBLIZAR_NALF_PLUGIN_URL.'font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style('custom-css', WEBLIZAR_NALF_PLUGIN_URL.'css/acl-custom.css');
 }
 add_action('login_enqueue_scripts', 'acl_advanced_login_form_plugin');
 

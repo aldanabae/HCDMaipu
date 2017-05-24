@@ -74,15 +74,22 @@
             <div class="recent-news-items <?php echo $no_p?>">
                 <ul>
             <?php // setup the query
-            $news_args = array( 'suppress_filters' => true,
+            $news_args = array(
                            'posts_per_page' => $num_items,
-                           'post_type' => 'news',
-                           'order' => 'DESC'
-                         );
+                           'post_type'      => 'news',
+                           'post_status'    => array( 'publish' ),
+                           'order'          => 'DESC'
+                        );
 
-            if($category != 0){
-            	$news_args['tax_query'] = array( array( 'taxonomy' => 'news-category', 'field' => 'id', 'terms' => $category) );
+            if( $category != 0 ) {
+            	$news_args['tax_query'] = array(
+                                            array(
+                                                'taxonomy'  => 'news-category',
+                                                'field'     => 'term_id',
+                                                'terms'     => $category
+                                            ));
             }
+
             $cust_loop = new WP_Query($news_args);
 			global $post;
                $post_count = $cust_loop->post_count;
@@ -222,13 +229,20 @@ class SP_News_scrolling_Widget extends WP_Widget {
                <div class="newsticker-jcarousellite">
 			   <ul>
             <?php // setup the query
-            $news_args = array( 'suppress_filters' => true,
-       							'posts_per_page' => $num_items,                   
-                           'post_type' => 'news',
-                           'order' => 'DESC'
+            $news_args = array(
+                            'posts_per_page'    => $num_items,
+                            'post_type'         => 'news',
+                            'post_status'       => array( 'publish' ),
+                            'order'             => 'DESC'
                          );
-            if($category != 0){
-            	$news_args['tax_query'] = array( array( 'taxonomy' => 'news-category', 'field' => 'id', 'terms' => $category) );
+
+            if( $category != 0 ) {
+            	$news_args['tax_query'] = array(
+                                            array(
+                                                    'taxonomy'  => 'news-category',
+                                                    'field'     => 'term_id',
+                                                    'terms'     => $category
+                                            ));
             }
             $cust_loop = new WP_Query($news_args);
 			global $post;
@@ -365,13 +379,20 @@ class SP_News_thmb_Widget extends WP_Widget {
 			 
                 <ul>
             <?php // setup the query
-            $news_args = array( 'suppress_filters' => true,
-                           'posts_per_page' => $num_items,
-                           'post_type' => 'news',
-                           'order' => 'DESC'
-                         );
-            if($category != 0){
-            	$news_args['tax_query'] = array( array( 'taxonomy' => 'news-category', 'field' => 'id', 'terms' => $category) );
+            $news_args = array(
+                                'posts_per_page'    => $num_items,
+                                'post_type'         => 'news',
+                                'post_status'       => array( 'publish' ),
+                                'order'             => 'DESC'
+                            );
+
+            if($category != 0) {
+            	$news_args['tax_query'] = array(
+                                            array(
+                                                'taxonomy'  => 'news-category',
+                                                'field'     => 'term_id',
+                                                'terms'     => $category
+                                        ));
             }
 
             $cust_loop = new WP_Query($news_args);

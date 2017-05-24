@@ -1,5 +1,9 @@
 <!-- Dashboard Settings panel content --- >
 <!----------------------------------------> 
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <style>
 
 </style>

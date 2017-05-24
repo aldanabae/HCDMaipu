@@ -35,6 +35,11 @@
 .cincopa-login {
 	padding: 10px;
 }
+.cincopa-gallery-block .cincopa-login a{
+	  color: #0073aa;
+          text-decoration: underline;
+}
+
 
 #cincopa_button {
 	height: 24px;

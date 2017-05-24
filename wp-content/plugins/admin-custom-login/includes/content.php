@@ -1,48 +1,19 @@
 <?php
+
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 require_once('get_value.php');
 ?>
 <style>
 	#post-social-5{
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('<?php echo WEBLIZAR_NALF_PLUGIN_URL.'css/img/pattern-1.png'; ?>') left top repeat, url('<?php echo WEBLIZAR_NALF_PLUGIN_URL.'css/img/bg1.jpg'; ?>') center center fixed;
 	}
-	::-webkit-scrollbar{
-		width: 12px;
-	}
-	::-webkit-scrollbar-track{
-		outline: 0px solid slategrey;
-		 background: transparent;
-		border-radius: 0px;
-		border:0px
-	}
-	::-webkit-scrollbar-thumb{
-		border-radius: 0px;
-		background: rgba(71,204,232,0.9);
-		border:0px;
-		outline: 0px solid slategrey;
-	}
-	a:focus{
-		-webkit-box-shadow: none !important;
-		box-shadow:none !important;
-	}
-	.wp-color-result{
-		height:24px;
-	}
-	.wp-color-result:hover{
-		text-underline:none;
-	}
-	#TB_ajaxContent{
-		width:100% !important;
-	}
-	#TB_window {
-		height: auto !important;
-	}
+	
 </style>
 <!-- ==============================================
 Fonts
 =============================================== -->
-<link href='http://fonts.googleapis.com/css?family=Dosis:600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 <div id="wrapper">
 	<!-- Navigation -->
@@ -95,25 +66,7 @@ Fonts
 						<h3 class="sidebar-profile-name"><a href="http://weblizar.com/" target="_blank" style="background-color: #29282f; border-left:0px ; "><?php _e( 'Weblizar', 'WEBLIZAR_ACL' ); ?></a></h3>
 						
 						
-						<style>
-						.acl-rate-us  span.dashicons{
-						width: 30px;
-						height: 30px;
-						}
-						.acl-rate-us  span.dashicons-star-filled:before {
-						content: "\f155";
-						font-size: 30px;
-						}
-						.acl-rate-us {
-							color : #FBD229 !important;
-							padding-top:5px !important;
-						}
-						.acl-rate{
-							color:#fff;
-							margin-top:10px !important;
-							margin-bottom:5px !important;
-						}
-						</style>
+						
 						<h5 style="color:#fff" class="acl-rate"><?php _e('Show Us Some Love (Rate Us)','WEBLIZAR_ACL')?></h5>
 						<a class="acl-rate-us" style="text-align:center; text-decoration: none;font:normal 30px/l;" href="https://wordpress.org/plugins/admin-custom-login/" target="_blank">
 							<span class="dashicons dashicons-star-filled"></span>

@@ -1,8 +1,8 @@
 === WP News and Scrolling Widgets  ===
-Contributors: wponlinesupport, anoopranawat 
+Contributors: wponlinesupport, anoopranawat
 Tags: wponlinesupport, wordpress news plugin, news website, main news page scrolling , wordpress vertical news plugin widget, wordpress horizontal news plugin widget , Free scrolling news wordpress plugin, Free scrolling news widget wordpress plugin, WordPress set post or page as news, WordPress dynamic news, news, latest news, custom post type, cpt, widget, vertical news scrolling widget, news widget
 Requires at least: 3.1
-Tested up to: 4.7
+Tested up to: 4.7.5
 Author URI: http://wponlinesupport.com
 Stable tag: trunk
 License: GPLv2 or later
@@ -17,6 +17,8 @@ Every CMS site needs a news section. WP News allows you add, manage and display 
 View [DEMO](http://wponlinesupport.com/wp-plugin/sp-news-and-scrolling-widgets/) for additional information.
 
 View [PRO DEMO and Features](http://wponlinesupport.com/wp-plugin/sp-news-and-scrolling-widgets/) for additional information.
+
+Download our all [FREE 34 WordPress Plugins](https://www.wponlinesupport.com/wp-online-support-all-free-34-plugins/?utm_source=wp&event=fd).
 
 View [Masonry Add-on](http://wponlinesupport.com/wordpress-plugin-addon/masonry-addon-wp-news-widgets/) with 12 designs and 7 effects.
 
@@ -61,6 +63,7 @@ show_date="false" content_words_limit="30" ]</code>
 
 * **limit :** [sp_news limit="10"] (Display latest 10 news and then pagination).
 * **category :**  [sp_news category="category_id"] (Display News categories wise).
+* **pagination_type:** [sp_news pagination_type="numeric"] (Select the pagination type for News ie "numeric" OR "next-prev" ).
 * **grid :** [sp_news grid="2"] OR [sp_news grid="list"] (Display News in Grid formats. To display News in list view, Use grid="list").
 * **show_date :** [sp_news show_date="false"] (Display News date OR not. By default value is "True". Options are "ture OR false")
 * **show_content :** [sp_news show_content="true" ] (Display News Short content OR not. By default value is "True". Options are "ture OR false").
@@ -157,6 +160,14 @@ Yse  <code> [sp_news] </code>
 
 == Changelog == 
 
+= 3.3.1 (19 May 2017) =
+* [*] Resolved WPML language translate issue while news is being displayed with taxonomy.
+* [*] Updated 'How it Work' page.
+* [*] Resolved post status issue. Now only 'Published' post will be displayed.
+
+= 3.3 (15/02/2017) =
+* [+] Added new shortcode parameter "pagination_type" (Select the pagination type for News ie "numeric" OR "next-prev" ).
+
 = 3.2.11 (09/12/2016) =
 * [*] Resolved conflict when 'WP News and Widget - Masonry Layout' plugin is activated.
 
@@ -237,13 +248,17 @@ Yse  <code> [sp_news] </code>
 * Admin setting page
 
 = 1.0 =
-* Initial release
-* Adds custom post type for News item
-* Adds all and single page templates for news
-* Adds Letest news widget
-* Adds Vertical news scrolling widget
+* Initial release.
 
 == Upgrade Notice ==
+
+= 3.3.1 (19 May 2017) =
+* [*] Resolved WPML language translate issue while news is being displayed with taxonomy.
+* [*] Updated 'How it Work' page.
+* [*] Resolved post status issue. Now only 'Published' post will be displayed.
+
+= 3.3 (15/02/2017) =
+* [+] Added new shortcode parameter "pagination_type" (Select the pagination type for News ie "numeric" OR "next-prev" ).
 
 = 3.2.11 (09/12/2016) =
 * [*] Resolved conflict when 'WP News and Widget - Masonry Layout' plugin is activated.
@@ -323,4 +338,4 @@ Setting page for main news page vertical and horizontal news scrolling
 Added Vertical and horizontal news scrolling widget with setting page
 
 = 1.0 =
-Initial release
+Initial release.

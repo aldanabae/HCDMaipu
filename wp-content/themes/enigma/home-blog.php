@@ -5,8 +5,7 @@ if($wl_theme_options['blog_title'] !='') { ?>
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="enigma_heading_title">
-					<h3><?php //echo esc_attr($wl_theme_options['blog_title']); 
-						echo "Noticias";?></h3>		
+					<h3><?php echo esc_attr($wl_theme_options['blog_title']); ?></h3>		
 				</div>
 			</div>
 		</div>

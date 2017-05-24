@@ -30,7 +30,7 @@
 			<div class="enigma_footer_social_div">
 				<ul class="social">
 					<?php if($wl_theme_options['fb_link']!='') { ?>
-					<li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
+					   <li class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
 					<?php } if($wl_theme_options['twitter_link']!='') { ?>
 					<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"><i class="fa fa-twitter"></i></a></li>				
 					<?php } if($wl_theme_options['linkedin_link']!='') { ?>

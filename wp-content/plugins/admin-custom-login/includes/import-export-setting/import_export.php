@@ -1,5 +1,9 @@
 <!-- Dashboard Settings panel content --- >
 <!----------------------------------------> 
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <div class="row">
 	<!-- // Export Settings //-->
 	<div class="panel panel-primary panel-default content-panel">

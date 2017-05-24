@@ -4,12 +4,12 @@ Plugin Name: Post video players, slideshow albums, photo galleries and music / p
 Plugin URI: https://www.cincopa.com/media-platform/wordpress-plugin.aspx
 Description: Post rich videos and photos galleries from your cincopa account
 Author: Cincopa 
-Version: 1.143
+Version: 1.145
 */
 
 function _cpmp_plugin_ver()
 {
-	return 'wp1.143';
+	return 'wp1.145';
 }
 
 function _cpmp_url()

@@ -2,6 +2,7 @@
 /** Theme Name	: Enigma
 * Theme Core Functions and Codes
 */
+
 	/**Includes required resources here**/
 	define('WL_TEMPLATE_DIR_URI', get_template_directory_uri());
 	define('WL_TEMPLATE_DIR', get_template_directory());
@@ -23,7 +24,8 @@
 	$ImageUrl6 = esc_url(get_template_directory_uri() ."/images/portfolio3.png");
 	$ImageUrl7 = esc_url(get_template_directory_uri() ."/images/portfolio4.png");
 	$wl_theme_options=array(
-			//Logo and Fevicon header	
+			//Logo and Fevicon header
+			'title_position'=>'',
 			'upload__header_image'=>'',
 			'upload_image_logo'=>'',
 			'height'=>'55',
@@ -90,7 +92,9 @@
 			'service_3_icons'=>"fa fa-wordpress",
 			'service_3_text'=>__("There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.", 'enigma' ),
 			'service_3_link'=>"#",			
-
+			'product_title'=>'',
+			
+			
 			//Portfolio Settings:
 			'portfolio_home'=>'1',
 			'port_heading' => __('Recent Works', 'enigma' ),
@@ -134,6 +138,7 @@
 	'flex-height'    => true,
 	'height'        => 100,
 	'default-image' => get_template_directory_uri() . '/images/header-bg.jpg',
+	'wp-head-callback'   => 'enigma_header_style',
 );
 add_theme_support( 'custom-header', $args );
 
@@ -202,6 +207,61 @@ add_theme_support( 'custom-header', $defaults );
 	return '';
 	}
 	add_filter('excerpt_more', 'weblizar_excerpt_more');
+	
+	
+	if ( ! function_exists( 'enigma_header_style' ) ) :
+	function enigma_header_style() {
+		$header_text_color = get_header_textcolor();
+	// If no custom options for text are set, let's bail.
+	// get_header_textcolor() options: add_theme_support( 'custom-header' ) is default, hide text (returns 'blank') or any hex value.
+	if ( get_theme_support( 'custom-header', 'default-text-color' ) == $header_text_color ) {
+		return;
+	}
+	// If we get this far, we have custom styles. Let's do this.
+	?>
+	<style id="fashionair-custom-header-styles" type="text/css">
+	<?php
+		// Has the text been hidden?
+		if ( 'blank' == $header_text_color ) :
+	?>
+		.head-contact-info li a{
+		color:#fff;
+		}
+		.hd_cover {
+		color: #fff;
+		}
+		.logo p {
+		color: #fff;
+		}
+		.social i {
+		color: #fff;
+		}
+		.social li {
+		border: 2px solid #ffffff;
+		}
+		.logo a {
+			color: #fff;
+		}
+	<?php
+		// If the user has set a custom color for the text use that.
+		else :
+	?>
+		.head-contact-info li a, .hd_cover, .logo p, .social i, .logo a{
+			color: #31A3DD;
+			/*
+			Cambio color Titulo HEADER
+			color: #<?php echo esc_attr( $header_text_color ); ?>;*/
+		}
+		.social li {
+			border:2px solid #<?php echo esc_attr( $header_text_color ); ?>;
+		}
+	<?php endif; ?>
+	</style>
+	<?php
+}
+endif; 
+	
+	
 	/*
 	* Weblizar widget area
 	*/
@@ -276,8 +336,8 @@ add_theme_support( 'custom-header', $defaults );
     } elseif (is_attachment()) {
         $parent = get_post($post->post_parent);
         $cat = get_the_category($parent->ID);
-        $cat = $cat[0];
-        echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
+        //$cat = $cat[0];
+       // echo get_category_parents($cat, TRUE, ' ' . $delimiter . ' ');
         echo '<li><a href="' . get_permalink($parent) . '">' . $parent->post_title . '</a></li> ' . $delimiter . ' ';
         echo $before . get_the_title() . $after;
     } elseif (is_page() && !$post->post_parent) {
@@ -439,12 +499,12 @@ function enigma_plugin_recommend(){
             'name'      => 'Flickr Album Gallery',
             'slug'      => 'flickr-album-gallery',
             'required'  => false,
-        ),
+        ),*/
 	array(
-            'name'      => 'Gallery Pro',
-            'slug'      => 'gallery-pro',
+            'name'      => 'Appointment Scheduler',
+            'slug'      => 'appointment-scheduler-weblizar',
             'required'  => false,
-        ), */
+        ), 
 	array(
             'name'      => 'Admin Custom Login',
             'slug'      => 'admin-custom-login',
@@ -454,4 +514,5 @@ function enigma_plugin_recommend(){
 	);
     tgmpa( $plugins );
 }
+
 ?>

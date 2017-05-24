@@ -1,5 +1,9 @@
 <!-- Dashboard Settings panel content --- >
 <!----------------------------------------> 
+<?php
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit;
+?>
 <div class="row">
 	<div class="post-social-wrapper clearfix">
 		<div class="col-md-12 post-social-item">
@@ -36,23 +40,7 @@
 				</tr>
 				<tr class="radio-span" style="border-bottom:none;">
 					<td>
-						<style>
-						.acl-rate-us  span.dashicons{
-						width: 30px;
-						height: 30px;
-						}
-						.acl-rate-us  span.dashicons-star-filled:before {
-						content: "\f155";
-						font-size: 30px;
-						}
-						.acl-rate-us {
-							color : #FBD229 !important;
-							padding-top:5px !important;
-						}
-						.acl-rate-us span{
-							display:inline-block;
-						}
-						</style>
+						
 						<h4><?php _e('If you are enjoying using our Admin Custom Login plugin and find it useful, then please consider writing a positive feedback. Your feedback will help us to encourage and support the plugins continued development and better user support.','WEBLIZAR_ACL')?></h4>
 						<a class="acl-rate-us" style="text-align:center; text-decoration: none;font:normal 30px/l;" href="https://wordpress.org/plugins/admin-custom-login/" target="_blank">
 							<span class="dashicons dashicons-star-filled"></span>
