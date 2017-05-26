@@ -27,7 +27,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-users"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="#">Bancas</a></h3>						
+						<h3><a href="http://localhost/HCDMaipu/employee-circle-grid/">Bancas</a></h3>						
 						<p><p>Integrantes de las bancas del Honorable Concejo Deliberante de Maipú.</p>
 						</p>					
 					</div>

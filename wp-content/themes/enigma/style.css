@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p , .textwidget{
 font-family: 'Open Sans', sans-serif;
-font-size: 16px;
+font-size: 20px; /*font-size: 16px;*/
 line-height: 26px;
 
 }
@@ -157,11 +157,11 @@ line-height: 26px;
 /* youtube */
 .social li.youtube{
 	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #C92228 50%);
+	background-image: linear-gradient(to bottom, transparent 50%, #cc181e 50%);
 }
 .social li.youtube:hover{
 	background-position: 0 -100%;
-	background-color:#C92228;
+	background-color:#cc181e;
 }
 
 .enigma_heading_title {
