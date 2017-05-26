@@ -270,3 +270,4 @@
 [23-May-2017 14:15:03 UTC] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\HCDMaipu\wp-admin\includes\dashboard.php on line 1227
 [24-May-2017 14:07:14 UTC] PHP Notice:  Undefined index: login_redirect_user in C:\xampp\htdocs\HCDMaipu\wp-content\plugins\admin-custom-login\admin-custom-login.php on line 30
 [24-May-2017 14:07:31 UTC] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\HCDMaipu\wp-admin\includes\dashboard.php on line 1227
+[26-May-2017 15:09:38 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\HCDMaipu\wp-content\themes\cista\header.php on line 153

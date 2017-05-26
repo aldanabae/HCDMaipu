@@ -23,6 +23,7 @@
 	<!-- Header Section -->
 	<div class="header_section" >
 		<div class="container" >
+			
 			<!-- Logo & Contact Info -->
 			<div class="row ">
 				<div class="col-md-6 col-sm-12 wl_rtl" >					
@@ -41,14 +42,14 @@
 				<div class="col-md-6 col-sm-12">
 				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
 				<ul class="head-contact-info">
-						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo "e-mail HCD"; ?></a></li><?php } ?>
-						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo "tefono HCD"; ?></a></li><?php } ?>
+						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
 				</ul>
 				<?php } ?>
 					<ul class="social">			
 						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>
 						
-						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twiiter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
 														
 						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
 		                
@@ -58,6 +59,7 @@
 				<?php } ?>
 			</div>
 			<!-- /Logo & Contact Info -->
+
 		</div>	
 	</div>	
 	<!-- /Header Section -->

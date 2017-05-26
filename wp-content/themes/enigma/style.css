@@ -139,11 +139,11 @@ line-height: 26px;
 /* dribble */
 .social li.twitter{
 	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #f60 50%);
+	background-image: linear-gradient(to bottom, transparent 50%, #1da1f2 50%); /* #f60*/
 }
 .social li.twitter:hover{
 	background-position: 0 -100%;
-	background-color:#f60;
+	background-color: #1da1f2;/* #f60*/
 }
 /* linkedin */
 .social li.linkedin{
