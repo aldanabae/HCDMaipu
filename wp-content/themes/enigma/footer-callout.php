@@ -15,5 +15,6 @@
 		</div>
 		
 	</div>
-	<div class="enigma_callout_shadow"></div>
+	<!-- <div class="enigma_callout_shadow"></div> -->
 </div>
+<div style="border-style: solid; border-color:#FFF;" ></div>

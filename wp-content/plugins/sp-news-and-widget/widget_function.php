@@ -64,7 +64,8 @@
         echo $before_widget;
 
 ?>
-             <h4 class="widget-title"><?php echo $title ?></h4>
+            <div class="enigma_footer_widget_title"><?php echo $title ?><div class="enigma-footer-separator"></div></div>
+             <!--<h4 class="widget-title"><?php echo $title ?></h4>-->
             <!--visual-columns-->
             <?php
 			$no_p = '';
@@ -218,7 +219,8 @@ class SP_News_scrolling_Widget extends WP_Widget {
         echo $before_widget;
 
 ?>
-             <h4 class="widget-title"><?php echo $title ?></h4>
+             <div class="enigma_footer_widget_title"><?php echo $title ?><div class="enigma-footer-separator"></div></div>
+             <!--<h4 class="widget-title"><?php echo $title ?></h4>-->
             <!--visual-columns-->
             <?php
 				$no_p = '';
@@ -368,7 +370,8 @@ class SP_News_thmb_Widget extends WP_Widget {
         $postcount = 0;
         echo $before_widget;
 ?>
-             <h4 class="widget-title"><?php echo $title ?></h4>
+             <div class="enigma_footer_widget_title"><?php echo $title ?><div class="enigma-footer-separator"></div></div>
+             <!--<h4 class="widget-title"><?php echo $title ?></h4>-->
             <!--visual-columns-->
             <?php
 				$no_p = '';

@@ -16,7 +16,7 @@
 .news-thumb{float:left; width:100%; margin-bottom:25px;}
 
 .grid-date-post, .grid-date-post a{font-size:13px; margin-bottom:5px;}
-.widget-date-post, .widget-date-post a{font-size:13px; margin-top:5px;}
+.widget-date-post, .widget-date-post a{font-size:13px; margin-top:5px; color:#FFF;}
 
 .news-col-4{width:25%; float:left; clear:none !important; padding:0 15px;}
 .news-col-3{width:33%; float:left; clear:none !important; padding:0 15px;}
@@ -35,7 +35,7 @@
   
 /* widget */  
 .news_li {clear: both !important; margin-bottom:8px !important; margin-top:8px !important; padding-bottom:10px !important; }
-.news_li a.newspost-title, .widget .news_li a.newspost-title, #secondary .widget .news_li a.newspost-title{color:#555;}
+.news_li a.newspost-title, .widget .news_li a.newspost-title, #secondary .widget .news_li a.newspost-title{color:#428CBA;}
 .news_li p{padding-bottom:0px !important}
 .news-col-3 .news-thumb, .news-col-2 .news-thumb, .news-col-4 .news-thumb{margin-bottom:10px;}
 .news-col-3 .post-content-text, .news-col-2 .post-content-text, .news-col-4 .post-content-text{width:100%; margin:0px;}
