@@ -26,30 +26,35 @@
 <?php wp_footer(); ?>
 
 <div class="enigma_service" style="padding-bottom: 240px;">
-<div style="text-align:center;">
-	<div class="enigma_heading_title">
-			<h3>Contacto</h3>		
-	</div>
-	<div class="col-md-6 col-sm-6 enigma_footer_widget_column">
-		<ul>
-			<li>
-				<i class="fa fa-envelope" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
-			</li>
-		</ul>
-		<ul>			
-			<li data-original-title="" title="">
-				<i class="fa fa-phone" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>0261 481-2396
-			</li>				
-		</ul>
-		<ul>						
-			<li data-original-title="" title="">
-				<i class="fa fa-map-marker" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>Pablo Pescara 99, 5515 Maipú, Mendoza
-			</li>				
-		</ul>
-	</div>
+	<div style="text-align:center;">
+		<div class="enigma_heading_title">
+				<h3>Contacto</h3>		
+		</div>
+		<div class="col-md-5 col-sm-5 enigma_footer_widget_column">
+			<ul>
+			</br>
+			</br>
+			</br>
+				<li>
+					<i class="fa fa-envelope" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
+				</li>
+			</br>
+			</ul>
+			<ul>			
+				<li data-original-title="" title="">
+					<i class="fa fa-phone" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>0261 481-2396
+				</li>				
+			</ul>
+			</br>
+			<ul>						
+				<li data-original-title="" title="">
+					<i class="fa fa-map-marker" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>Pablo Pescara 99, 5515 Maipú, Mendoza
+				</li>				
+			</ul>
+		</div>
 
-	<div class="col-md-6 col-sm-6 enigma_footer_widget_column">
-
+		<div class="col-md-7 col-sm-7 enigma_footer_widget_column">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.6741423614227!2d-68.78794095782004!3d-32.98540635834195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5925bb94933e04c0!2sHONORABLE+CONSEJO+DELIBERANTE+MAIP%C3%9A+HCD!5e0!3m2!1ses!2ses!4v1495999715008" width="550" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 	</div>
-</div>
 </div>
