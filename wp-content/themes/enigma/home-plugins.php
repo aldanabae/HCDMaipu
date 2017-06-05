@@ -36,19 +36,19 @@
 			</br>
 			</br>
 				<li>
-					<i class="fa fa-envelope" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
+					<i class="fa fa-envelope" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
 				</li>
 			</br>
 			</ul>
 			<ul>			
 				<li data-original-title="" title="">
-					<i class="fa fa-phone" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>0261 481-2396
+					<i class="fa fa-phone" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>0261 481-2396
 				</li>				
 			</ul>
 			</br>
 			<ul>						
 				<li data-original-title="" title="">
-					<i class="fa fa-map-marker" style="color:#31A3DD; margin-right: 8px;font-size: 24px;"></i>Pablo Pescara 99, 5515 Maipú, Mendoza
+					<i class="fa fa-map-marker" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>Pablo Pescara 99, 5515 Maipú, Mendoza
 				</li>				
 			</ul>
 		</div>

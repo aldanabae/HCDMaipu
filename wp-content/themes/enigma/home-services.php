@@ -43,7 +43,10 @@
 					</div>
 				</div>
 			</div>
-			<div class=" col-md-6 service">
+		</div>
+
+		<div class="row isotope" id="isotope-service-container">
+			<div class=" col-md-4 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-handshake-o"></i></div> 
 					<div class="enigma_service_detail media-body">
@@ -53,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-			<div class=" col-md-6 service">
+			<div class=" col-md-4 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-file-powerpoint-o"></i></div> 
 					<div class="enigma_service_detail media-body">
@@ -63,8 +66,18 @@
 					</div>
 				</div>
 			</div>
-				
+			<div class=" col-md-4 service">
+				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
+					<div class="enigma_service_iocn pull-left"><i class="fa fa-sign-in"></i></div> 
+					<div class="enigma_service_detail media-body">
+						<h3><a href="#">Digesto</a></h3>						
+						<p><p>Acceso a Sistema Digesto.</p>
+						</p>					
+					</div>
+				</div>
+			</div>	
 		</div>
+		
 	</div>
 </div>	 
 <!-- /Service section -->

@@ -1,5 +1,5 @@
 <?php $wl_theme_options = weblizar_get_options(); ?>
-<div class="enigma_callout_area" style="background-color: #34495e;">
+<div class="enigma_callout_area" style="background-color: #005591;">
 	<div class="container">
 		<div class="row">
 		<?php if($wl_theme_options['fc_title'] !='') { ?>

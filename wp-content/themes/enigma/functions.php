@@ -247,13 +247,13 @@ add_theme_support( 'custom-header', $defaults );
 		else :
 	?>
 		.head-contact-info li a, .hd_cover, .logo p, .social i, .logo a{
-			color: #31A3DD;
+			color: #005591;
 			/*
 			Cambio color Titulo HEADER
 			color: #<?php echo esc_attr( $header_text_color ); ?>;*/
 		}
 		.social li {
-			border:2px solid #<?php echo esc_attr( $header_text_color ); ?>;
+			border:2px solid #5080AA; /*Cambio border:2px solid #<?php echo esc_attr( $header_text_color ); ?>;*/
 		}
 	<?php endif; ?>
 	</style>

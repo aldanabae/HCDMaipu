@@ -20,7 +20,7 @@
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
 .dropdown-menu .active a {	
-	background-color: #31A3DD;
+	background-color: #5080AA; /*Cambio #31A3DD*/
 }
 .collapse ul.nav li.current-menu-parent .dropdown-toggle, .collapse ul.nav li.current-menu-item .dropdown-toggle,
 .navbar-default .navbar-collapse ul.nav li.current-menu-parent .dropdown-toggle,.navbar-default .navbar-collapse ul.nav li.current-menu-item .dropdown-toggle
@@ -41,7 +41,7 @@
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-	background-color: #31A3DD;
+	background-color: #005591; /*Cambio #31A3DD*/
 }
 
 .dropdown-menu {
@@ -49,7 +49,7 @@
 }
 /** headings titles css ***/
 .enigma_heading_title h3 {
-	border-bottom: 4px solid #31A3DD;
+	border-bottom: 4px solid #005591; /*Cambio #31A3DD*/
 	color: #3b3b3b;
 }
 .enigma_heading_title2 h3 {
@@ -58,18 +58,18 @@
 }
 /** slider css ***/
 .carousel-list li {
-	background:rgba(49, 162, 221, 0.8);
+	background:rgb(1, 41, 84); /*Cambio background:rgba(49, 162, 221, 0.8);*/
 }
 
 /** service  section css ***/
 .enigma_service_iocn{
-	border: 4px solid #31A3DD;
+	border: 4px solid #012A54; /*Cambio #31A3DD*/
 	background-color:#31A3DD;
 	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);
+	background-image: linear-gradient(to bottom, #5080AA 50%, #fff 50%); /*Cambio background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);*/
 }
 .enigma_service_area:hover .enigma_service_iocn i {
-	color:#31A3DD;
+	color:#012A54; /*Cambio #31A3DD*/
 }
 .enigma_service_area:hover .enigma_service_iocn{background-color:#ffffff;}
 .enigma_service_iocn_2 i{
@@ -264,10 +264,10 @@
 }
 
 .enigma_blog_read_btn{
-	border: 2px solid #31A3DD;
+	border: 2px solid #012A54; /*Cambio #31A3DD*/
 	background-size: 100% 200%;
 	background-color:#31A3DD;
-    background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);
+    background-image: linear-gradient(to bottom, #5080AA 50%, #fff 50%); /*Cambio background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);*/
    }
 .enigma_blog_read_btn i {
 	margin-right:5px;
@@ -275,7 +275,7 @@
 .enigma_blog_read_btn:hover{
 	background-position: 0 -100%;
 	background-color:#ffffff;
-	color: #31A3DD;
+	color: #005591; /*Cambio #31A3DD*/
 }
 .enigma_blog_read_btn a{color:#ffffff;}
 
@@ -467,7 +467,7 @@
 /***** Footer Area Css *****************************************************************
 ***************************************************************************************/
 .enigma_footer_area{
-	background: #31A3DD;
+	background: #5080AA; /*Cambio */
 	border-top: 0px solid #6B6B6B;
 }
 /***** Contact Info Css *****************************************************************
