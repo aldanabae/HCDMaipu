@@ -18,27 +18,13 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-<div>
+<body <?php body_class('boxed'); ?>>
+<div id="wrapper">
 	<!-- Header Section -->
-	<div class="header_section hd_cover" <?php if ( has_header_image() ) { ?> style='background-image: url("<?php header_image(); ?>")' <?php  } ?> >		
+	<div class="header_section" >
 		<div class="container" >
 			<!-- Logo & Contact Info -->
 			<div class="row ">
-			<?php if($wl_theme_options['title_position']) { ?>
-				<div class="col-md-6 col-sm-12 wl_rtl" >					
-					<div claSS="logo logocenter">						
-					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
-						<?php } else {
-							echo get_bloginfo('name');
-						} ?>
-					</a>
-					<p><?php bloginfo( 'description' ); ?></p>
-					</div>
-				</div>
-			<?php } else { ?>
 				<div class="col-md-6 col-sm-12 wl_rtl" >					
 					<div claSS="logo">						
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -48,46 +34,31 @@
 							echo get_bloginfo('name');
 						} ?>
 					</a>
-					<p><?php bloginfo( 'description' ); ?></p>
+					<p><?php echo "Sitio Oficial del Honorable Consejo Deliberante de Maipú"; ?></p>
 					</div>
 				</div>
-			<?php } ?>
 				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
 				<div class="col-md-6 col-sm-12">
 				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
 				<ul class="head-contact-info">
-						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
-						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope" style="color:#31A3DD;"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone" style="color:#31A3DD;"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
 				</ul>
 				<?php } ?>
-					<ul class="social">
-					<?php if($wl_theme_options['fb_link']!='') { ?>
-					   <li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } if($wl_theme_options['twitter_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']); ?>"><i class="fa fa-twitter"></i></a></li>
-					<?php } if($wl_theme_options['linkedin_link']!='') { ?>					
-					<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']); ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } if($wl_theme_options['youtube_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
-	                <?php } if($wl_theme_options['gplus']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
-	                <?php } if($wl_theme_options['instagram']!='') { ?>
-					<li class="instagram" data-toggle="tooltip" data-placement="bottom" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
-	                <?php } if($wl_theme_options['vk_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="vk"><a href="<?php echo esc_url($wl_theme_options['vk_link']) ; ?>"><i class="fa fa-vk"></i></a></li>
-	                <?php } if($wl_theme_options['qq_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="qq"><a href="<?php echo esc_url($wl_theme_options['qq_link']) ; ?>"><i class="fa fa-qq"></i></a></li>
-	                <?php } if($wl_theme_options['whatsapp_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="whatsapp"><a href="tel:<?php echo esc_attr($wl_theme_options['whatsapp_link']) ; ?>"><i class="fa fa-whatsapp"></i></a></li>
-	                <?php } ?>
-					
+					<ul class="social">			
+						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>
+						
+						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+		                
+						<li class="dribbble" data-toggle="tooltip" data-placement="bottom" title="Instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>         
 					</ul>	
 				</div>
 				<?php } ?>
 			</div>
 			<!-- /Logo & Contact Info -->
+
 		</div>	
-		
 	</div>	
 	<!-- /Header Section -->
 	<!-- Navigation  menus -->
@@ -97,8 +68,7 @@
 			<nav class="navbar navbar-default " role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-					 
-					  <span class="sr-only"><?php _e('Toggle navigation','enigma');?></span>
+						<span class="sr-only"><?php _e('Toggle navigation','cista');?></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
