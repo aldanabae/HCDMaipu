@@ -301,7 +301,7 @@ function get_template() {
  * @return string Template directory path.
  */
 function get_template_directory() {
-	$template = get_template();
+	$template = "hcdMaipu"; /*Cambio $template = get_template();*/
 	$theme_root = get_theme_root( $template );
 	$template_dir = "$theme_root/$template";
 
@@ -325,7 +325,7 @@ function get_template_directory() {
  * @return string Template directory URI.
  */
 function get_template_directory_uri() {
-	$template = str_replace( '%2F', '/', rawurlencode( get_template() ) );
+	$template = "hcdMaipu"; /*Cambio $template = str_replace( '%2F', '/', rawurlencode( get_template() ) );*/
 	$theme_root_uri = get_theme_root_uri( $template );
 	$template_dir_uri = "$theme_root_uri/$template";
 

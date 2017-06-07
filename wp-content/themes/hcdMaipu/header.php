@@ -34,30 +34,28 @@
 							echo get_bloginfo('name');
 						} ?>
 					</a>
-					<p><?php echo "Sitio Oficial del Honorable Consejo Deliberante de Maipú"; ?></p>
+					<p><?php //echo "Sitio Oficial del Honorable Consejo Deliberante de Maipú"; ?></p>
 					</div>
 				</div>
 				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
 				<div class="col-md-6 col-sm-12">
 				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
-				<ul class="head-contact-info">
-						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope" style="color:#31A3DD;"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
-						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone" style="color:#31A3DD;"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
-				</ul>
-				<?php } ?>
-					<ul class="social">			
-						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>
-						
+					<ul class="head-contact-info">
+						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope" style="color:#5080AA;"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone" style="color:#5080AA;"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
+					</ul>
+					<?php } ?>
+					<ul class="social">	
+						<h4>Síguenos en:</h4>	
+						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>						
 						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
-		                
+						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><a href="#"><i class="fa fa-youtube"></i></a></li>		                
 						<li class="dribbble" data-toggle="tooltip" data-placement="bottom" title="Instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>         
 					</ul>	
 				</div>
 				<?php } ?>
 			</div>
 			<!-- /Logo & Contact Info -->
-
 		</div>	
 	</div>	
 	<!-- /Header Section -->

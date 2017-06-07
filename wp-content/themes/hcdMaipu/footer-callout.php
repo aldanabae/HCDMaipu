@@ -9,7 +9,7 @@
 			<?php } ?>
 			<?php if($wl_theme_options['fc_btn_txt'] !='') { ?>
 			<div class="col-md-2">
-			<a href="<?php echo esc_url($wl_theme_options['fc_btn_link']); ?>" class="enigma_callout_btn" style="background-image: linear-gradient(to bottom, transparent 50%, #31A3DD 50%); border:4px solid #31A3DD;"><?php echo esc_attr($wl_theme_options['fc_btn_txt']); ?></a>
+			<a href="<?php echo esc_url($wl_theme_options['fc_btn_link']); ?>" class="enigma_callout_btn" style="background-image: linear-gradient(to bottom, transparent 50%, #012A54 50%); border:4px solid #5080AA;"><?php echo esc_attr($wl_theme_options['fc_btn_txt']); ?></a>
 			</div>
 			<?php } ?>
 		</div>
