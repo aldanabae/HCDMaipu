@@ -25,31 +25,31 @@
 <?php get_template_part('google', 'font'); ?>
 <?php wp_footer(); ?>
 
-<div class="enigma_service" style="padding-bottom: 240px;">
+<div class="enigma_service" style="padding-bottom: 50px;">
 	<div style="text-align:center;">
 		<div class="enigma_heading_title">
 				<h3>Contacto</h3>		
 		</div>
 		<div class="col-md-5 col-sm-5 enigma_footer_widget_column">
 			<ul>
-			</br>
-			</br>
-			</br>
-				<li>
-					<i class="fa fa-envelope" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
-				</li>
-			</br>
+				</br>
+				</br>
+				</br>
+					<li>
+						<i class="fa fa-envelope" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
+					</li>
+				</br>
 			</ul>
 			<ul>			
-				<li data-original-title="" title="">
-					<i class="fa fa-phone" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>0261 481-2396
-				</li>				
+					<li data-original-title="" title="">
+						<i class="fa fa-phone" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>0261 481-2396
+					</li>				
 			</ul>
-			</br>
+				</br>
 			<ul>						
-				<li data-original-title="" title="">
-					<i class="fa fa-map-marker" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>Pablo Pescara 99, 5515 Maipú, Mendoza
-				</li>				
+					<li data-original-title="" title="">
+						<i class="fa fa-map-marker" style="color:#5080AA; margin-right: 8px;font-size: 24px;"></i>Pablo Pescara 99, 5515 Maipú, Mendoza
+					</li>				
 			</ul>
 		</div>
 

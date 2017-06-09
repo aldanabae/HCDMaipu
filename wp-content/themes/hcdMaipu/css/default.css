@@ -311,13 +311,13 @@
 	color:#31A3DD;
 }
 .enigma_sidebar_widget {
-	border-left: 3px solid #31A3DD;
-	border-right: 3px solid #31A3DD;
-	border-bottom: 3px solid #31A3DD;
+	border-left: 3px solid #005591; /*Cambio border-left: 3px solid #31A3DD;*/
+	border-right: 3px solid #005591; /*Cambio border-right: 3px solid #31A3DD;*/
+	border-bottom: 3px solid #005591; /*Cambio border-bottom: 3px solid #31A3DD;*/
 	background-color:#ffffff;
 }
 .enigma_sidebar_widget_title{
-	background:#31A3DD;
+	background:#005591; /*Cambio background:#31A3DD;*/
 }
 .enigma_sidebar_link p a:hover  , .enigma_sidebar_widget ul li a:hover {
 	color: #31A3DD;
@@ -522,18 +522,18 @@ color: #005591 !important; /*Cambio color: #31A3DD !important;*/
 
 
 .navbar-toggle {
-background-color: #31A3DD !important;
-border: 1px solid #31A3DD !important;
+background-color: #005591 !important; /*Cambio background-color: #31A3DD !important;*/
+border: 1px solid #005591 !important; /*Cambio border: 1px solid: #31A3DD !important;*/
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #31A3DD !important;
+background-color: #5080AA !important; /*Cambio background-color: #31A3DD !important;*/
 }
 .enigma_blockquote_section blockquote {
 border-left: 5px solid #31A3DD ;
 }
 #wp-calendar caption {
-background-color: #31a3dd;
+background-color: #5080AA; /*Cambio background-color: #31a3dd;*/
 color: #ffffff;
 padding: 10px;
 }
@@ -541,7 +541,7 @@ padding: 10px;
 text-align: center;
 }
 table th {
-border: 1px solid #dddddd;
+border: 1px solid #5080AA; /*Cambio border: 1px solid #dddddd; */
 padding: 8px;
 line-height: 20px;
 text-align: center;
@@ -555,7 +555,7 @@ text-align: center;
 vertical-align: top;
 }
 table td {
-border: 1px solid #dddddd;
+border: 1px solid #B5C9DB; /*Cambio border: 1px solid #dddddd; */
 padding: 8px;
 line-height: 20px;
 text-align: center;

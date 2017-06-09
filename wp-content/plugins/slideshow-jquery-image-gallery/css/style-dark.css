@@ -1,4 +1,4 @@
-.slideshow_container_style-dark { background: #000; }
+.slideshow_container_style-dark { background: #005591; } /*Cambio .slideshow_container_style-dark { background: #000; }*/
 
 .slideshow_container_style-dark a { text-decoration: none; }
 .slideshow_container_style-dark a:hover { text-decoration: none; }
@@ -44,6 +44,7 @@
 .slideshow_container_style-dark .slideshow_description_box h6 a {
 	text-align: center;
 	color: #fff;
+	background-color: #5080AA; /*Cambio: Agrego esta linea de codigo para cambiar el color del footer de slider de fotos de galeria*/
 }
 
 .slideshow_container_style-dark .slideshow_transparent { filter: alpha(opacity = 50); opacity: 0.5; }
