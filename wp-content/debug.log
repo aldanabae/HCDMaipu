@@ -586,3 +586,4 @@
 [09-Jun-2017 15:55:03 UTC] PHP Notice:  Undefined index: login_redirect_user in C:\xampp\htdocs\HCDMaipu\wp-content\plugins\admin-custom-login\admin-custom-login.php on line 30
 [12-Jun-2017 13:31:59 UTC] PHP Notice:  Undefined index: login_redirect_user in C:\xampp\htdocs\HCDMaipu\wp-content\plugins\admin-custom-login\admin-custom-login.php on line 30
 [12-Jun-2017 13:32:13 UTC] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\HCDMaipu\wp-admin\includes\dashboard.php on line 1227
+[12-Jun-2017 20:10:21 UTC] PHP Notice:  Undefined index: login_redirect_user in C:\xampp\htdocs\HCDMaipu\wp-content\plugins\admin-custom-login\admin-custom-login.php on line 30

@@ -87,19 +87,19 @@
 ********************************************************************************/
 
 .enigma_home_portfolio_showcase .enigma_home_portfolio_showcase_icons a {
-	background-color: #31A3DD;
-	border:2px solid #31A3DD;
+	background-color: #5080AA; /*Cambio background-color: #31A3DD; */
+	border:3px solid #5080AA; /*Cambio border:2px solid #31A3DD;*/
 	color:#fff;
 }
 .enigma_home_portfolio_showcase .enigma_home_portfolio_showcase_icons a:hover{
 	background-color: #ffffff;
-	border:2px solid #31A3DD;
-	color:#31A3DD;
+	border:3px solid #5080AA; /*Cambio border:2px solid #31A3DD;*/
+	color:#5080AA; /*Cambio color:#31A3DD;*/
 }
 .enigma_home_portfolio_caption {
-	border-left:1px solid #ccc;
-	border-bottom:4px solid #31A3DD;
-	border-right:1px solid #ccc;
+	border-left:2px solid #B5C9DB; /*Cambio border-left:1px solid #ccc;*/
+	border-bottom:4px solid #005591; /*Cambio border-bottom:4px solid #31A3DD;*/
+	border-right:2px solid #B5C9DB; /*Cambio border-right:1px solid #ccc;*/
 }
 
 .enigma_home_portfolio_caption:hover{
@@ -109,10 +109,10 @@
    color: #ffffff;
 }
 .img-wrapper:hover .enigma_home_portfolio_caption{
- background: #31A3DD;
- border-left:1px solid #31A3DD;
-	border-bottom:4px solid #31A3DD;
-	border-right:1px solid #31A3DD;
+ background: #005591; /*Cambio background: #31A3DD;*/
+ border-left:2px solid #005591; /*Cambio border-left:1px solid #31A3DD;*/
+ border-bottom:4px solid #005591; /*Cambio border-bottom:4px solid #31A3DD;*/
+ border-right:2px solid #005591; /*Cambio border-right:1px solid #31A3DD;*/
 }
 .img-wrapper:hover .enigma_home_portfolio_caption  h3 a,.img-wrapper:hover .enigma_home_portfolio_caption  small{
  color: #ffffff;
