@@ -144,9 +144,9 @@ font-family: 'Arimo',Arial, Helvetica, sans-serif;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #000;
+  color: #012A54; /*Cambio color: #000;*/
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #B5C9DB; /*Cambio background-color: #ffffff;*/
   padding: 7px 20px 7px 22px;
   font-family: 'Arimo',Arial, Helvetica, sans-serif;
 }

@@ -59,8 +59,10 @@
 		</div>	
 	</div>	
 	<!-- /Header Section -->
-	<!-- Navigation  menus -->
-	<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
+
+
+<!-- Navigation  menus/ Menu configurable por pantalla oculto-->
+<!-- 	<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
 		<span id="header_shadow"></span>
 		<div class="container navbar-container" >
 			<nav class="navbar navbar-default " role="navigation">
@@ -83,4 +85,53 @@
 				</div>	
 			</nav>
 		</div>
+	</div> -->
+
+
+<!-- Navigation  menus -->
+<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
+	<span id="header_shadow"></span>
+	<div class="container navbar-container" >
+		<nav class="navbar navbar-default " role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					<span class="sr-only">Toggle navigation</span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="menu" class="collapse navbar-collapse ">	
+				<div class="menu-main-container">
+					<ul id="menu-main" class="nav navbar-nav">
+						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
+							<a href="#">El Consejo<i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu">
+								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
+									<a href="http://localhost/HCDMaipu/vision-mision/">Visión y Misión</a>
+								</li>
+						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
+						        	<a href="http://localhost/HCDMaipu/valores/">Nuestros Valores</a>
+						        </li>
+						        <li "menu-item-2282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2282" data-original-title="" title="">
+						        	<a href="http://localhost/HCDMaipu/politica/">Nuestra Política</a>
+						        </li>
+						    </ul>
+						</li>
+						<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290">
+							<a href="http://localhost/HCDMaipu/noticias/">Noticias</a>
+						</li>
+						<li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291">
+							<a href="http://localhost/HCDMaipu/galeria/">Galeria</a>
+						</li>
+						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
+							<a href="http://localhost/HCDMaipu/digesto/">Digesto</a>
+						</li>
+					</ul>
+				</div>				
+			</div>	
+		</nav>
 	</div>
+</div>
+
+

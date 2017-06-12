@@ -584,3 +584,5 @@
 [09-Jun-2017 14:49:46 UTC] PHP Fatal error:  Call to undefined function base_url() in C:\xampp\htdocs\HCDMaipu\wp-content\themes\hcdMaipu\header.php on line 145
 [09-Jun-2017 14:51:20 UTC] PHP Fatal error:  Call to undefined function base_url() in C:\xampp\htdocs\HCDMaipu\wp-content\themes\hcdMaipu\header.php on line 147
 [09-Jun-2017 15:55:03 UTC] PHP Notice:  Undefined index: login_redirect_user in C:\xampp\htdocs\HCDMaipu\wp-content\plugins\admin-custom-login\admin-custom-login.php on line 30
+[12-Jun-2017 13:31:59 UTC] PHP Notice:  Undefined index: login_redirect_user in C:\xampp\htdocs\HCDMaipu\wp-content\plugins\admin-custom-login\admin-custom-login.php on line 30
+[12-Jun-2017 13:32:13 UTC] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\HCDMaipu\wp-admin\includes\dashboard.php on line 1227
