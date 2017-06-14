@@ -577,7 +577,7 @@ line-height: 26px;
 
 .enigma_home_portfolio_caption h3 a {
 	color: #012A54; /*Cambio color: #404040;*/
-	font-size:22px;
+	font-size:17px; /*Cambio font-size:22px;*/
 }
 .enigma_home_portfolio_caption small {
 	color: #777777;

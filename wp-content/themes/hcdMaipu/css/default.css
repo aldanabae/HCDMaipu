@@ -264,7 +264,7 @@
 }
 
 .enigma_blog_read_btn{
-	border: 2px solid #012A54; /*Cambio #31A3DD*/
+	border: 3px solid #5080AA; /*Cambio border: 2px solid #31A3DD*/
 	background-size: 100% 200%;
 	background-color:#31A3DD;
     background-image: linear-gradient(to bottom, #5080AA 50%, #fff 50%); /*Cambio background-image: linear-gradient(to bottom, #31A3DD 50%, #fff 50%);*/

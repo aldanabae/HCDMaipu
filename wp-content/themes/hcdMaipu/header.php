@@ -105,7 +105,7 @@
 				<div class="menu-main-container">
 					<ul id="menu-main" class="nav navbar-nav">
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="#">El Consejo<i class="fa fa-angle-down"></i></a>
+							<a href="#">Institucional<i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/vision-mision/">Visión y Misión</a>
@@ -118,12 +118,27 @@
 						        </li>
 						    </ul>
 						</li>
+
+						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
+							<a href="#">El Concejo<i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu">
+								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
+									<a href="http://localhost/HCDMaipu/autoridades/">Autoridades</a>
+								</li>
+						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
+						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Bloques</a>
+						        </li>
+						    </ul>
+						</li>
+
 						<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290">
 							<a href="http://localhost/HCDMaipu/noticias/">Noticias</a>
 						</li>
+
 						<li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291">
 							<a href="http://localhost/HCDMaipu/galeria/">Galeria</a>
 						</li>
+
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
 							<a href="http://localhost/HCDMaipu/digesto/">Digesto</a>
 						</li>

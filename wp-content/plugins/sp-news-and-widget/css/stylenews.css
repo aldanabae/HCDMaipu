@@ -66,7 +66,7 @@
 
 .news-col-1.has-no-date .post-content-text{margin-left:0px; width:100%;}
 .news-more-link{padding:5px 15px; background:#5080AA; color:#fff; display:inline-block; clear:both; text-decoration:none !important;} /*Cambio background:#555;*/
-.news-more-link:hover{background:#f1f1f1; color:#555}
+.news-more-link:hover{background:#B5C9DB; color:#555} /*Cambio .news-more-link:hover{background:#f1f1f1; color:#555}*/
 
 .widget ul li.news_li::before{content:none !important}
 
