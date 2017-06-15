@@ -24,8 +24,63 @@
 </style>
 <?php get_template_part('google', 'font'); ?>
 <?php wp_footer(); ?>
+<!-- Fin enigma Callout Section -->
 
-<div class="enigma_service" style="padding-bottom: 50px;">
+
+
+<!-- Inicio Seccion Herramientas de Interes -->
+<div class="enigma_service" style="padding-bottom: 10px; background-color: #B5C9DB"> 
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="enigma_heading_title">
+					<h3>Herramientas de Interés</h3>		
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="container">
+		<div class="row isotope" id="isotope-service-container" align="center">		
+			<div class=" col-md-3 service">
+				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
+					<div class="enigma_service_detail media-body">
+						<h3><a href="http://localhost/HCDMaipu/download/415/">Constitución</br>Nacional</a></h3>											
+					</div>
+				</div>
+			</div>
+
+			<div class=" col-md-3 service">
+				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
+					<div class="enigma_service_detail media-body">
+						<h3><a href="http://localhost/HCDMaipu/download/418/">Constitución Provincial</a></h3>											
+					</div>
+				</div>
+			</div>
+
+			<div class=" col-md-3 service">
+				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
+					<div class="enigma_service_detail media-body">
+						<h3><a href="http://localhost/HCDMaipu/download/421/">Ley Orgánica Municipal</a></h3>											
+					</div>
+				</div>
+			</div>
+
+			<div class=" col-md-3 service">
+				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
+					<div class="enigma_service_detail media-body">
+						<h3><a href="#">Reglamento Interno del HCD Maipú</a></h3>											
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>	
+<!-- Fin Seccion Herramientas de Interes -->
+
+
+
+<!-- Inicio Seccion Contacto-->
+<div class="enigma_service" style="padding-bottom: 20px;">
 	<div style="text-align:center;">
 		<div class="enigma_heading_title">
 				<h3>Contacto</h3>		
@@ -58,3 +113,4 @@
 		</div>
 	</div>
 </div>
+<!-- Fin Seccion Contacto-->

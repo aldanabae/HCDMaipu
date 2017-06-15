@@ -41,12 +41,12 @@
 				<div class="col-md-6 col-sm-12">
 				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
 					<ul class="head-contact-info">
-						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope" style="color:#5080AA;"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
-						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone" style="color:#5080AA;"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope" style="color:#FFF;"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
+						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone" style="color:#FFF;"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
 					</ul>
 					<?php } ?>
 					<ul class="social">	
-						<h4>Síguenos en:</h4>	
+						<h4 style="color:#FFF;">Síguenos en:</h4>	
 						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>						
 						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><a href="#"><i class="fa fa-youtube"></i></a></li>		                
@@ -89,7 +89,7 @@
 
 
 <!-- Navigation  menus -->
-<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
+<div class="navigation_menu"  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
 	<span id="header_shadow"></span>
 	<div class="container navbar-container" >
 		<nav class="navbar navbar-default " role="navigation">
@@ -101,11 +101,11 @@
 				  	<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div id="menu" class="collapse navbar-collapse ">	
+			<div id="menu" class="collapse navbar-collapse">	
 				<div class="menu-main-container">
 					<ul id="menu-main" class="nav navbar-nav">
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="#">Institucional<i class="fa fa-angle-down"></i></a>
+							<a href="#">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/vision-mision/">Visión y Misión</a>
@@ -120,7 +120,7 @@
 						</li>
 
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="#">El Concejo<i class="fa fa-angle-down"></i></a>
+							<a href="#">El Concejo <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/autoridades/">Autoridades</a>
