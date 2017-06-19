@@ -13,7 +13,7 @@
     <meta charset="<?php bloginfo('charset'); ?>" />	
 	<?php $wl_theme_options = weblizar_get_options(); ?>
 	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
-	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" /> 
+	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" width="32px" height="32px"/> 
 	<?php } ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 	<?php wp_head(); ?>
@@ -107,6 +107,9 @@
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
 							<a href="#">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
+								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
+									<a href="http://localhost/HCDMaipu/informacion-general/">Información General</a>
+								</li>
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/vision-mision/">Visión y Misión</a>
 								</li>

@@ -576,7 +576,7 @@ line-height: 26px;
 }
 
 .enigma_home_portfolio_caption h3 a {
-	color: #012A54; /*Cambio color: #404040;*/
+	color: #0F2652; /*Cambio color: #404040;*/
 	font-size:17px; /*Cambio font-size:22px;*/
 }
 .enigma_home_portfolio_caption small {
@@ -1193,8 +1193,8 @@ margin-bottom:20px;
 	padding-bottom: 10px;
 	text-align: center;
 	margin-top: 0px;
-	color:#5080AA; /*Cambio color:#999999;*/
-	background:#B5C9DB; /*Cambio background:#f6f6f6;*/
+	color:#5E79AD; /*Cambio color:#999999;*/
+	background:#BAC5DB; /*Cambio background:#f6f6f6;*/
 
 }
 .enigma_blog_comment a{
@@ -1732,8 +1732,8 @@ margin-bottom: 20px;
 }
 
 .enigma_comment_form_section h2 {
-	color: #012A54; /*Cambio color: #121212;*/
-	border-bottom: 1px solid #B5C9DB; /*Cambio border-bottom: 1px solid #E0E0E0;*/
+	color: #0F2652; /*Cambio color: #121212;*/
+	border-bottom: 1px solid #BAC5DB; /*Cambio border-bottom: 1px solid #E0E0E0;*/
 }
 .enigma_comment_form_section h2 > i {
 	color:#ccc;
@@ -1984,7 +1984,7 @@ margin-bottom: 20px;
 
 
 .enigma_footer_widget_area{
-	background: #012A54; /*Cambio #34495e */
+	background: #0F2652; /*Cambio #34495e */
 }
 
 .enigma-footer-separator{ /*Practicamente deshabilitado*/

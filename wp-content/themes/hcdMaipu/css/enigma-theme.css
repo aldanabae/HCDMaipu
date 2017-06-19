@@ -16,7 +16,7 @@ a:hover, a:focus{
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color: #5080AA;
+	color: #5E79AD;
 	text-shadow: 0 0 1px rgba(0,0,0,0.01);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 margin-right:7px;
 }
 .navbar-default .navbar-nav > li > a{
-	color: #005591; /*Cambio color: #000;*/
+	color: #1A408A; /*Cambio color: #000;*/
 	border-radius: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -144,9 +144,9 @@ font-family: 'Arimo',Arial, Helvetica, sans-serif;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #012A54; /*Cambio color: #000;*/
+  color: #0F2652; /*Cambio color: #000;*/
   text-decoration: none;
-  background-color: #B5C9DB; /*Cambio background-color: #ffffff;*/
+  background-color: #BAC5DB; /*Cambio background-color: #ffffff;*/
   padding: 7px 20px 7px 22px;
   font-family: 'Arimo',Arial, Helvetica, sans-serif;
 }
@@ -317,14 +317,14 @@ color: #999;
 
 .enigma_header_breadcrum_title{
 	margin-bottom:70px;
-	background:#B5C9DB; /*Cambio background:#edf0f2;*/
+	background:#BAC5DB; /*Cambio background:#edf0f2;*/
 	opacity:1;
 	padding-top:8px;
 	padding-bottom:8px;
 	
 }
 .enigma_header_breadcrum_title h1{
-	color:#012A54; /*Cmbio color:#777777;*/
+	color:#0F2652; /*Cmbio color:#777777;*/
 }
 .breadcrumb {
 	font-size: 17px;
