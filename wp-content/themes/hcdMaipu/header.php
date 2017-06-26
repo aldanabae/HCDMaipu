@@ -105,7 +105,7 @@
 				<div class="menu-main-container">
 					<ul id="menu-main" class="nav navbar-nav">
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="#">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
+							<a href="">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/informacion-general/">Información General</a>
@@ -123,13 +123,16 @@
 						</li>
 
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="#">El Concejo <i class="fa fa-angle-double-down menu-carot"></i></a>
+							<a href="">El Concejo <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/autoridades/">Autoridades</a>
 								</li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
 						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Bloques</a>
+						        </li>
+						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
+						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Comisiones</a>
 						        </li>
 						    </ul>
 						</li>
@@ -144,6 +147,10 @@
 
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
 							<a href="http://localhost/HCDMaipu/digesto/">Digesto</a>
+						</li>
+
+						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
+							<a href="http://www.hcdmaipu.gob.ar/webmail">WebMail HCD</a>
 						</li>
 					</ul>
 				</div>				

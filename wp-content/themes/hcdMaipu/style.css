@@ -131,11 +131,11 @@ line-height: 26px;
 /* dribble */
 .social li.dribbble{
 	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #EA4C89 50%);
+	background-image: linear-gradient(to bottom, transparent 50%, #ba147b 50%);
 }
 .social li.dribbble:hover{
   background-position: 0 -100%;
-  background-color:#EA4C89;
+  background-color:#ba147b;
  }
 /* dribble */
 .social li.twitter{
@@ -1240,7 +1240,7 @@ margin-bottom:20px;
 	margin: 0 0 20px;
 }
 .enigma_blog_post_content p {
-	color: #777777;
+	color: #0F2652; /*Cambio color: #777777;*/
 }
 .enigma_fuul_blog_detail_padding{
 
@@ -2115,9 +2115,9 @@ margin-bottom: 20px;
     display: none;
 	border-radius: 2px;
     text-align: center;
-    color: #fafafa;
+    color: #0F2652; /*Cambio color: #fafafa;*/
     font-size: 25x;
-    background: #3b3b3b;
+    background: #BAC5DB; /*Cambio background: #3b3b3b;*/
     z-index: 9999;
 	-webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;

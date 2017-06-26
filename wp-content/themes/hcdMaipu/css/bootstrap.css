@@ -129,6 +129,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+  color: #FFF; /*Cambio agregue este campo para darle color al boton "Enviar"*/
+  background-color: #5E79AD; /*Cambio agregue este campo para darle color al boton "Enviar"*/
 }
 button[disabled],
 html input[disabled] {
@@ -3998,8 +4000,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
-    background-color: transparent;
+    color: #0F2652; /*Cambio color: #333;*/
+    background-color: #BAC5DB; /*Cambio background-color: transparent;*/
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
