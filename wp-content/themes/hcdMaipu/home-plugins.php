@@ -91,7 +91,7 @@
 				</br>
 				</br>
 					<li>
-						<i class="fa fa-envelope" style="color:#5E79AD; margin-right: 8px;font-size: 24px;"></i>hcdmaipu@mail.com
+						<i class="fa fa-envelope" style="color:#5E79AD; margin-right: 8px;font-size: 24px;"></i>informacion@hcdmaipu.gob.ar
 					</li>
 				</br>
 			</ul>
