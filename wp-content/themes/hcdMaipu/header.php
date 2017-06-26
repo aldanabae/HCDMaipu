@@ -46,7 +46,7 @@
 					</ul>
 					<?php } ?>
 					<ul class="social">	
-						<h4 style="color:#FFF;">Síguenos en:</h4>	
+						<h4 style="color:#FFF;">Seguinos en:</h4>	
 						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>						
 						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><a href="#"><i class="fa fa-youtube"></i></a></li>		                
@@ -105,7 +105,7 @@
 				<div class="menu-main-container">
 					<ul id="menu-main" class="nav navbar-nav">
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
+							<a href="#">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/informacion-general/">Información General</a>
@@ -123,7 +123,7 @@
 						</li>
 
 						<li id="menu-item-2270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2270 dropdown" data-original-title="" title="">
-							<a href="">El Concejo <i class="fa fa-angle-double-down menu-carot"></i></a>
+							<a href="#">El Concejo <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
 									<a href="http://localhost/HCDMaipu/autoridades/">Autoridades</a>
@@ -147,6 +147,10 @@
 
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
 							<a href="http://localhost/HCDMaipu/digesto/">Digesto</a>
+						</li>
+
+						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
+							<a href="http://localhost/HCDMaipu/contacto/">Contáctenos</a>
 						</li>
 
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">

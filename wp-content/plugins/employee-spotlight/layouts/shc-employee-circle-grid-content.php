@@ -2,7 +2,7 @@
 $real_post = $post;
 $ent_attrs = get_option('employee_spotlight_attr_list');
 ?>
-<article class="col-md-3 col-sm-4 col-xs-6 person">
+<article class="col-md-4 col-sm-4 col-xs-6 person"><!--Cambio class="col-md-3 col-sm-4 col-xs-6 person" para que aparezcan de a 3 empleados por linea-->
     <div class="person-thumb in">
         <a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>">
             <div style="border-color:<?php echo esc_html(emd_global_val('employee-spotlight', 'glb_imgborder_color', $employee_circle_grid_set_list)); ?>

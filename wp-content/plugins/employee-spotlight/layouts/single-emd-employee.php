@@ -3,10 +3,13 @@ $ent_attrs = get_option('employee_spotlight_attr_list');
 ?>
 <div style="position:relative" class="emd-container">
 <div>
-    <h3>
+    <h2> <!-- Cambio titulo h3 a h2-->
         <?php echo get_the_title(); ?>
-    </h3>
+    </h2>
 </div>
+
+</br><!-- Espacio para que no quede pegado el circulo de la foto al titulo-->
+
 <div class="mainDetails row">
     <?php if (emd_is_item_visible('ent_employee_photo', 'employee_spotlight', 'attribute')) { ?> 
     <div class="person-photo col-md-4">

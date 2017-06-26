@@ -68,10 +68,10 @@
 			</div>
 			<div class=" col-md-4 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
-					<div class="enigma_service_iocn pull-left"><i class="fa fa-sign-in"></i></div> 
+					<div class="enigma_service_iocn pull-left"><i class="fa fa-book"></i></div> 
 					<div class="enigma_service_detail media-body">
 						<h3><a href="#">Digesto</a></h3>						
-						<p><p>Acceso a Sistema Digesto.</p>
+						<p><p>Acceso a Sistema Digesto Maipú.</p>
 						</p>					
 					</div>
 				</div>
