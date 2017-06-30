@@ -48,9 +48,9 @@
 					<ul class="social">	
 						<h4 style="color:#FFF;">Seguinos en:</h4>	
 						<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a href="https://www.facebook.com/hcd.maipu.5"><i class="fa fa-facebook"></i></a></li>						
-						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><a href="#"><i class="fa fa-youtube"></i></a></li>		                
-						<li class="dribbble" data-toggle="tooltip" data-placement="bottom" title="Instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>         
+						<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="https://twitter.com/HCDMaipuMza"><i class="fa fa-twitter"></i></a></li>
+						<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><a href="https://www.youtube.com/channel/UCzalXbrGQJRroluAMhjfUDw"><i class="fa fa-youtube"></i></a></li>		                
+						<li class="dribbble" data-toggle="tooltip" data-placement="bottom" title="Instagram"><a href="https://www.instagram.com/hcdmaipu/"><i class="fa fa-instagram"></i></a></li>         
 					</ul>	
 				</div>
 				<?php } ?>
@@ -133,6 +133,9 @@
 						        </li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
 						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Comisiones</a>
+						        </li>
+						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
+						        	<a href="http://localhost/HCDMaipu/administracion-hcd/">Administración</a>
 						        </li>
 						    </ul>
 						</li>

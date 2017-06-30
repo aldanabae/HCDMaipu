@@ -40,8 +40,10 @@ get_header('emdplugins');
 		<nav role="navigation" id="emd-nav-below" class="site-navigation post-navigation nav-single">
 		<h3 class="assistive-text"><?php esc_html_e( 'Post navigation', 'wpas' ); ?></h3>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '<i class="fa fa-angle-left"></i>', 'Previous post link', 'wpas' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '<i class="fa fa-angle-right"></i>', 'Next post link', 'wpas' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous" style="font-size:18px;">%link</div>', '<span class="meta-nav">' . _x( '<i class="fa fa-angle-double-left"></i>', 'Previous post link', 'wpas' ) . '</span> %title' ); ?>
+		<!--Cambio tamaño de la fuente style="font-size:18px; y cambio flechita por una doble class="fa fa-angle-double-left"-->
+		<?php next_post_link( '<div class="nav-next" style="font-size:18px;">%link</div>', '%title <span class="meta-nav">' . _x( '<i class="fa fa-angle-double-right"></i>', 'Next post link', 'wpas' ) . '</span>' ); ?>
+		<!--Cambio tamaño de la fuente style="font-size:18px; y cambio flechita por una doble class="fa fa-angle-double-left"-->
 
 		</nav>
 <?php 	}

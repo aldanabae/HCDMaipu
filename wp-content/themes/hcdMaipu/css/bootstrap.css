@@ -296,7 +296,6 @@ textarea {
 a {
   color: #1A408A; /*Cambio #428bca*/
   text-decoration: none;
-  font-size: 16px; /*Cambio agrego este tamaño para los nombres del team*/
 }
 a:hover,
 a:focus {

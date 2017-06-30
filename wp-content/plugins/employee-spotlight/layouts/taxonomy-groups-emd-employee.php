@@ -32,7 +32,7 @@ $ent_attrs = get_option('employee_spotlight_attr_list');
                     <?php if (emd_is_item_visible('ent_employee_jobtitle', 'employee_spotlight', 'attribute')) { ?> 
                     <div class="segment-block">
                         <div class="row" data-has-attrib="false">
-                            <div class="col-md-6"> <span class="segtitle"><?php _e('Job Title', 'employee-spotlight'); ?></span> </div>
+                            <div class="col-md-3"> <span class="segtitle"><?php _e('Puesto:', 'employee-spotlight'); ?></span> </div> <!--Cambio para que aparezca Puesto no Job Title-->
                             <div class="col-md-6"> <span class="taxlabel"><?php echo esc_html(emd_mb_meta('emd_employee_jobtitle')); ?>
 </span> </div>
                         </div>
@@ -41,7 +41,7 @@ $ent_attrs = get_option('employee_spotlight_attr_list');
 } ?> <?php if (emd_is_item_visible('ent_employee_email', 'employee_spotlight', 'attribute')) { ?> 
                     <div class="segment-block">
                         <div class="row" data-has-attrib="false">
-                            <div class="col-md-6"> <span class="segtitle"><?php _e('Email', 'employee-spotlight'); ?></span> </div>
+                            <div class="col-md-3"> <span class="segtitle"><?php _e('Email:', 'employee-spotlight'); ?></span> </div>
                             <div class="col-md-6">
                                 <span class="segvalue"><a class="text-undernone" href="mailto:<?php echo esc_html(emd_mb_meta('emd_employee_email')); ?>
 "><?php echo esc_html(emd_mb_meta('emd_employee_email')); ?>
@@ -64,7 +64,8 @@ $ent_attrs = get_option('employee_spotlight_attr_list');
         </div>
     </div>
     <div class="panel-footer">
-        <div class="fcontent"> <?php if (emd_is_item_visible('tax_groups', 'employee_spotlight', 'taxonomy')) { ?> <span class="footer-object-title badge alert-info"><?php _e('Groups', 'employee-spotlight'); ?></span><span class="footer-object-value"><?php echo emd_get_tax_vals(get_the_ID() , 'groups'); ?></span> <?php
+        <div class="fcontent"> <?php if (emd_is_item_visible('tax_groups', 'employee_spotlight', 'taxonomy')) { ?> <span class="footer-object-title badge alert-info"><?php _e('Bloque', 'employee-spotlight'); ?></span><span class="footer-object-value"><?php echo emd_get_tax_vals(get_the_ID() , 'groups'); ?></span> <!--Cambio Groups por Bloque-->
+            <?php
 } ?> <?php if (emd_is_item_visible('tax_employee_tags', 'employee_spotlight', 'taxonomy')) { ?> <span class="footer-object-title badge alert-info"><?php _e('Tags', 'employee-spotlight'); ?></span><span class="footer-object-value"><?php echo emd_get_tax_vals(get_the_ID() , 'employee_tags'); ?></span> <?php
 } ?> </div>
     </div>

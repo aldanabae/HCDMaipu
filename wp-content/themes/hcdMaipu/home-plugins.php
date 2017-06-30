@@ -68,7 +68,7 @@
 			<div class=" col-md-3 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="#">Reglamento Interno del HCD Maipú</a></h3>											
+						<h3><a href="http://localhost/HCDMaipu/download/500/">Reglamento Interno del HCD Maipú</a></h3>											
 					</div>
 				</div>
 			</div>	
