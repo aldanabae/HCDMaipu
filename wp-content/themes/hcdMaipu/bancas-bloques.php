@@ -24,7 +24,7 @@
 				</div>
 			</div>		
 			<div class="enigma_home_portfolio_caption">
-				<h3><a target="_blank" href="http://localhost/HCDMaipu/bloque-ucr/">Bloque Unión Cívica Radical </br> 6 Concejales</a></h3>
+				<h3><a target="_blank" href="http://localhost/HCDMaipu/bloque-ucr/">Bloque Unión Cívica Radical </br> 5 Concejales</a></h3>
 			</div>
 		</div>
 		<div class="enigma_portfolio_shadow"></div>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="enigma_home_portfolio_caption">
-				<h3><a target="_blank" href="http://localhost/HCDMaipu/bloque-pj/">Bloque Partido Justicialista </br> 5 Concejales</a></h3>
+				<h3><a target="_blank" href="http://localhost/HCDMaipu/bloque-pj/">Bloque Partido Justicialista </br> 6 Concejales</a></h3>
 			</div>
 		</div>
 		<div class="enigma_portfolio_shadow"></div>

@@ -18,9 +18,12 @@
 		<div class="col-md-12 hc_404_error_section">
 			<div class="error_404">
 				<h2><?php _e('404','enigma'); ?></h2>
-				<h4><?php _e('Whoops... Page Not Found !!!','enigma'); ?></h4>
-				<p><?php _e('We`re sorry, but the page you are looking for doesn`t exist.','enigma'); ?></p>
-				<p><a href="<?php echo home_url( '/' ); ?>"><button class="enigma_send_button" type="submit"><?php _e('Go To Homepage','enigma'); ?></button></a></p>
+				<h4><?php _e('Ups... Página no encontrada !!!','enigma'); ?></h4> 
+				<!-- Cambio a castellaño <?php // _e('Whoops... Page Not Found !!!','enigma'); ?>-->
+				<p><?php _e('Lo sentimos, pero la página que buscas no existe.','enigma'); ?></p>
+				<!-- Cambio a castellaño <?php // _e('We`re sorry, but the page you are looking for doesn`t exist.','enigma');?>-->
+				<p><a href="<?php echo home_url( '/' ); ?>"><button class="enigma_send_button" type="submit"><?php _e('Volver a Página Principal','enigma'); ?></button></a></p>
+				<!-- Cambio a castellaño <?php //_e('Go To Homepage','enigma'); ?>-->
 			</div>
 		</div>
 	</div>

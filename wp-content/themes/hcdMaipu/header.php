@@ -132,7 +132,7 @@
 						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Bloques</a>
 						        </li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
-						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Comisiones</a>
+						        	<a href="http://localhost/HCDMaipu/comisiones/">Comisiones</a>
 						        </li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
 						        	<a href="http://localhost/HCDMaipu/administracion-hcd/">Administración</a>

@@ -32,7 +32,7 @@ $ent_attrs = get_option('employee_spotlight_attr_list');
                     <?php if (emd_is_item_visible('ent_employee_jobtitle', 'employee_spotlight', 'attribute')) { ?> 
                     <div class="segment-block">
                         <div class="row" data-has-attrib="false">
-                            <div class="col-md-3"> <span class="segtitle"><?php _e('Puesto:', 'employee-spotlight'); ?></span> </div> <!--Cambio para que aparezca Puesto no Job Title-->
+                            <div class="col-md-3"> <span class="segtitle"><?php _e('Cargo:', 'employee-spotlight'); ?></span> </div> <!--Cambio para que aparezca Cargo no Job Title-->
                             <div class="col-md-6"> <span class="taxlabel"><?php echo esc_html(emd_mb_meta('emd_employee_jobtitle')); ?>
 </span> </div>
                         </div>

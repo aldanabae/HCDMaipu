@@ -17,7 +17,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-calendar"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/event/">Agenda</a></h3>						
+						<h3><a href="http://localhost/HCDMaipu/evento/">Agenda</a></h3>						
 						<p><p>Actividades planificadas del Honorable Concejo Deliberante de Maipú.</p>
 						</p>					
 					</div>
@@ -37,7 +37,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-gavel"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="#">Sesiones</a></h3>						
+						<h3><a href="http://localhost/HCDMaipu/sesiones/">Sesiones</a></h3>						
 						<p><p>Sesiones para tratar Proyectos Legislativos.</p>
 						</p>					
 					</div>
@@ -48,16 +48,6 @@
 		<div class="row isotope" id="isotope-service-container">
 			<div class=" col-md-4 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
-					<div class="enigma_service_iocn pull-left"><i class="fa fa-handshake-o"></i></div> 
-					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/contrataciones/">Contrataciones</a></h3>						
-						<p><p>Contrataciones autorizadas por el Honorable Concejo Deliberante.</p>
-						</p>					
-					</div>
-				</div>
-			</div>
-			<div class=" col-md-4 service">
-				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-file-powerpoint-o"></i></div> 
 					<div class="enigma_service_detail media-body">
 						<h3><a href="http://localhost/HCDMaipu/presupuestos/">Presupuestos</a></h3>						
@@ -66,6 +56,18 @@
 					</div>
 				</div>
 			</div>
+
+			<div class=" col-md-4 service">
+				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
+					<div class="enigma_service_iocn pull-left"><i class="fa fa-envelope-o"></i></div> 
+					<div class="enigma_service_detail media-body">
+						<h3><a href="http://localhost/HCDMaipu/contacto/">Contáctenos</a></h3>						
+						<p><p>Nos interesa tu opinión y tus consultas.</p>
+						</p>					
+					</div>
+				</div>
+			</div>
+			
 			<div class=" col-md-4 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-book"></i></div> 

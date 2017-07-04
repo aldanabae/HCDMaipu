@@ -2,8 +2,8 @@
 
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
-        <div style="border: 5px solid; border-color:#1A408A; width: 70%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/06/dilma.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+        <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
+            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/06/MiriamGallardo.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -20,6 +20,10 @@
             <div class="person-mobile" style="font-size: 18px;">
                 Bloque Partido Justicialista                
             </div>
+
+            <div class="person-mobile" style="font-size: 18px;">
+                 <a class="social-icon email animate fa fa-envelope fa-fw" href="mailto:mgallardo@hcdmaipu.gob.ar"></a>mgallardo@hcdmaipu.gob.ar              
+            </div>
         </div>
     </div>
 </div>
@@ -28,8 +32,8 @@
 
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
-        <div style="border: 5px solid; border-color:#1A408A; width: 70%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/zapatero.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+        <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
+            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/JuanRosales.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -46,6 +50,10 @@
             <div class="person-mobile" style="font-size: 18px;">
                 Bloque Partido Justicialista                 
             </div>
+
+            <div class="person-mobile" style="font-size: 18px;">
+                 <a class="social-icon email animate fa fa-envelope fa-fw" href="mailto:jrosales@hcdmaipu.gob.ar"></a>jrosales@hcdmaipu.gob.ar              
+            </div>
         </div>
     </div>
 </div>
@@ -54,8 +62,8 @@
 
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
-        <div style="border: 5px solid; border-color:#1A408A; width: 70%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/zapatero.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+        <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
+            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/CarmeloSimo.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -72,6 +80,10 @@
             <div class="person-mobile" style="font-size: 18px;">
                 Bloque Partido Justicialista                 
             </div>
+
+            <div class="person-mobile" style="font-size: 18px;">
+                 <a class="social-icon email animate fa fa-envelope fa-fw" href="mailto:csimo@hcdmaipu.gob.ar"></a>csimo@hcdmaipu.gob.ar              
+            </div>
         </div>
     </div>
 </div>
@@ -84,8 +96,8 @@
 
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
-        <div style="border: 5px solid; border-color:#1A408A; width: 70%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/06/dilma.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+        <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
+            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/07/HoracioAlbornoz.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -110,8 +122,8 @@
 
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
-        <div style="border: 5px solid; border-color:#1A408A; width: 70%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/zapatero.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+        <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
+            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/07/DamianPeirone.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -136,8 +148,8 @@
 
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
-        <div style="border: 5px solid; border-color:#1A408A; width: 70%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/zapatero.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+        <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
+            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/07/LeoAlbornoz.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
