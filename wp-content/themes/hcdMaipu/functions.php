@@ -515,4 +515,9 @@ function enigma_plugin_recommend(){
     tgmpa( $plugins );
 }
 
+/*Agrego codigo para evitar actualizaciones de plugins*/
+
+remove_action( 'load-update-core.php', 'wp_update_plugins' );
+add_filter( 'pre_site_transient_update_plugins', create_function( '$a', "return null;" ) );
+
 ?>
