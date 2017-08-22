@@ -44,7 +44,7 @@
 			<div class=" col-md-3 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/download/415/">Constitución</br>Nacional</a></h3>											
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/download/415'; ?>">Constitución</br>Nacional</a></h3>											
 					</div>
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 			<div class=" col-md-3 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/download/418/">Constitución Provincial</a></h3>											
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/download/418'; ?>">Constitución Provincial</a></h3>											
 					</div>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 			<div class=" col-md-3 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/download/421/">Ley Orgánica Municipal</a></h3>											
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/download/421'; ?>">Ley Orgánica Municipal</a></h3>											
 					</div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 			<div class=" col-md-3 service">
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible"> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/download/500/">Reglamento Interno del HCD Maipú</a></h3>											
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/download/500'; ?>">Reglamento Interno del HCD Maipú</a></h3>											
 					</div>
 				</div>
 			</div>	

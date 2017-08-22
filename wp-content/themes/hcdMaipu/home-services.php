@@ -17,7 +17,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-calendar"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/evento/">Agenda</a></h3>						
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/evento'; ?>">Agenda</a></h3>						
 						<p><p>Actividades planificadas del Honorable Concejo Deliberante de Maipú.</p>
 						</p>					
 					</div>
@@ -27,7 +27,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-users"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/bancas-y-bloques/">Bancas</a></h3>						
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/bancas-y-bloques'; ?>">Bancas</a></h3>						
 						<p><p>Integrantes de las bancas del Honorable Concejo Deliberante de Maipú.</p>
 						</p>					
 					</div>
@@ -37,7 +37,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-gavel"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/sesiones/">Sesiones</a></h3>						
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/sesiones'; ?>">Sesiones</a></h3>						
 						<p><p>Sesiones para tratar Proyectos Legislativos.</p>
 						</p>					
 					</div>
@@ -50,7 +50,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-file-powerpoint-o"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/presupuestos/">Presupuestos</a></h3>						
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/presupuestos'; ?>">Presupuestos</a></h3>						
 						<p><p>Presupuestos aprobados por el Honorable Concejo Deliberante.</p>
 						</p>					
 					</div>
@@ -61,7 +61,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-envelope-o"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="http://localhost/HCDMaipu/contacto/">Contáctenos</a></h3>						
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/contacto'; ?>">Contáctenos</a></h3>						
 						<p><p>Nos interesa tu opinión y tus consultas.</p>
 						</p>					
 					</div>
@@ -72,7 +72,7 @@
 				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
 					<div class="enigma_service_iocn pull-left"><i class="fa fa-book"></i></div> 
 					<div class="enigma_service_detail media-body">
-						<h3><a href="#">Digesto</a></h3>						
+						<h3><a href="<?php echo DB_HOST.'HCDMaipu/...'; ?>">Digesto</a></h3>						
 						<p><p>Acceso a Sistema Digesto Maipú.</p>
 						</p>					
 					</div>

@@ -61,33 +61,6 @@
 	<!-- /Header Section -->
 
 
-<!-- Navigation  menus/ Menu configurable por pantalla oculto-->
-<!-- 	<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
-		<span id="header_shadow"></span>
-		<div class="container navbar-container" >
-			<nav class="navbar navbar-default " role="navigation">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-						<span class="sr-only"><?php _e('Toggle navigation','cista');?></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					</button>
-				</div>
-				<div id="menu" class="collapse navbar-collapse ">	
-				<?php wp_nav_menu( array(
-						'theme_location' => 'primary',
-						'menu_class' => 'nav navbar-nav',
-						'fallback_cb' => 'weblizar_fallback_page_menu',
-						'walker' => new weblizar_nav_walker(),
-						)
-						);	?>				
-				</div>	
-			</nav>
-		</div>
-	</div> -->
-
-
 <!-- Navigation  menus -->
 <div class="navigation_menu"  data-spy="affix" data-offset-top="95" id="enigma_nav_top">
 	<span id="header_shadow"></span>
@@ -108,16 +81,16 @@
 							<a href="#">Institucional <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
-									<a href="http://localhost/HCDMaipu/informacion-general/">Información General</a>
+									<a href="<?php echo DB_HOST.'HCDMaipu/informacion-general'; ?>">Información General</a>
 								</li>
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
-									<a href="http://localhost/HCDMaipu/vision-mision/">Visión y Misión</a>
+									<a href="<?php echo DB_HOST.'HCDMaipu/vision-mision'; ?>">Visión y Misión</a>
 								</li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
-						        	<a href="http://localhost/HCDMaipu/valores/">Nuestros Valores</a>
+						        	<a href="<?php echo DB_HOST.'HCDMaipu/valores' ;?>">Nuestros Valores</a>
 						        </li>
 						        <li "menu-item-2282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2282" data-original-title="" title="">
-						        	<a href="http://localhost/HCDMaipu/politica/">Nuestra Política</a>
+						        	<a href="<?php echo DB_HOST.'HCDMaipu/politica'; ?>">Nuestra Política</a>
 						        </li>
 						    </ul>
 						</li>
@@ -126,34 +99,34 @@
 							<a href="#">El Concejo <i class="fa fa-angle-double-down menu-carot"></i></a>
 							<ul class="dropdown-menu">
 								<li id="menu-item-1858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1858" data-original-title="" title="">
-									<a href="http://localhost/HCDMaipu/autoridades/">Autoridades</a>
+									<a href="<?php echo DB_HOST.'HCDMaipu/autoridades/'; ?>">Autoridades</a>
 								</li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
-						        	<a href="http://localhost/HCDMaipu/bancas-y-bloques/">Bloques</a>
+						        	<a href="<?php echo DB_HOST.'HCDMaipu/bancas-y-bloques'; ?>">Bloques</a>
 						        </li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
-						        	<a href="http://localhost/HCDMaipu/comisiones/">Comisiones</a>
+						        	<a href="<?php echo DB_HOST.'HCDMaipu/comisiones'; ?>">Comisiones</a>
 						        </li>
 						        <li id="menu-item-1737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737" data-original-title="" title="">
-						        	<a href="http://localhost/HCDMaipu/administracion-hcd/">Administración</a>
+						        	<a href="<?php echo DB_HOST.'HCDMaipu/administracion-hcd'; ?>">Administración</a>
 						        </li>
 						    </ul>
 						</li>
 
 						<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290">
-							<a href="http://localhost/HCDMaipu/noticias/">Noticias</a>
+							<a href="<?php echo DB_HOST.'HCDMaipu/noticias'; ?>">Noticias</a>
 						</li>
 
 						<li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291">
-							<a href="http://localhost/HCDMaipu/galeria/">Galeria</a>
+							<a href="<?php echo DB_HOST.'HCDMaipu/galeria'; ?>">Galeria</a>
 						</li>
 
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
-							<a href="http://localhost/HCDMaipu/digesto/">Digesto</a>
+							<a href="<?php echo DB_HOST.'HCDMaipu/digesto'; ?>">Digesto</a>
 						</li>
 
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">
-							<a href="http://localhost/HCDMaipu/contacto/">Contáctenos</a>
+							<a href="<?php echo DB_HOST.'HCDMaipu/contacto'; ?>">Contáctenos</a>
 						</li>
 
 						<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292">

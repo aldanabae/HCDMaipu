@@ -3,7 +3,7 @@
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
         <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/06/MiriamGallardo.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+            <img class="emd-img thumb" src="<?php echo DB_HOST.'HCDMaipu/wp-content/uploads/2017/06/MiriamGallardo.jpg'; ?>" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -33,7 +33,7 @@
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
         <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/JuanRosales.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+            <img class="emd-img thumb" src="<?php echo DB_HOST.'HCDMaipu/wp-content/uploads/2017/05/JuanRosales.jpg'; ?>" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -63,7 +63,7 @@
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
         <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/05/CarmeloSimo.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+            <img class="emd-img thumb" src="<?php echo DB_HOST.'HCDMaipu/wp-content/uploads/2017/05/CarmeloSimo.jpg'; ?>" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -97,7 +97,7 @@
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
         <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/07/HoracioAlbornoz.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+            <img class="emd-img thumb" src="<?php echo DB_HOST.'HCDMaipu/wp-content/uploads/2017/07/HoracioAlbornoz.jpg'; ?>" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -123,7 +123,7 @@
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
         <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/07/DamianPeirone.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+            <img class="emd-img thumb" src="<?php echo DB_HOST.'HCDMaipu/wp-content/uploads/2017/07/DamianPeirone.jpg'; ?>" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
@@ -149,7 +149,7 @@
 <div class="mainDetails row">        
     <div class="person-photo col-md-4">
         <div style="border: 5px solid; border-color:#1A408A; width: 100%; height: 100%;" class="person-img circle">
-            <img class="emd-img thumb" src="http://localhost/HCDMaipu/wp-content/uploads/2017/07/LeoAlbornoz.jpg" width:70% height:100% alt="Bloque Compromiso Federal">            
+            <img class="emd-img thumb" src="<?php echo DB_HOST.'HCDMaipu/wp-content/uploads/2017/07/LeoAlbornoz.jpg'; ?>" width:70% height:100% alt="Bloque Compromiso Federal">            
         </div>
     </div>
              
